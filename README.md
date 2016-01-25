@@ -4,8 +4,8 @@ Perché per Python ci vuole la RUSPA!!!
 ## Missione
 RusPython è un linguaggio di programmazione ispirato dall'illustre Matteo Salvini.   
 Crediamo fermamente che l'attuale stato dell'arte dei moderni linguaggi di programmazione non sia in grado di ricreare la sua magnificenza espressiva e contenutistica.   
-Se anche tu condividi la mia visione, RusPython è il linguaggio che fa per te!   
-Spero che mentre Matteo riuscirà nella sua impresa di liberare la Padania sa Roma ladrona, noi, nel nostro piccolo, libereremo il mondo dell'informatica dagli altri inutili linguaggi di programmazione.
+Se anche tu condividi la nostra visione, RusPython è il linguaggio che fa per te!   
+Spero che mentre Matteo riuscirà nella sua impresa di liberare la Padania da Roma ladrona, noi, nel nostro piccolo, libereremo il mondo dell'informatica dagli altri inutili, se non dannosi, linguaggi di programmazione.
 
 ## Installazione
 Per usarlo scarica ed estrai il file .zip  oppure clona il repository digitando
@@ -21,19 +21,19 @@ Aggiungi la cartella di RusPython al `PATH` usando uno dei due comandi seguenti 
 
 ## Utilizzo
 * Scrivi un file ruspy usando l'opportuna sintassi (in bocca al lupo).
-* Esegui `RusPython /path/to/ruspy/file parametri_opzionali`
+* Esegui `RusPython /path/to/ruspy/file [parametri_opzionali]`
 * Benvenuto nel magico mondo di RusPython!
 
 ## Features
 RusPython include diverse funzionalità perfette per ogni aspirante leader della Lega Nord:
-* Non ci sono istruzioni per effettuare gli import. Tutto il codice deve essere fatto a mano e "made in Padania".
+* Non ci sono istruzioni per effettuare gli import. Non vogliamo che codice straniero ci rubi il lavoro.
 * Tutti i programmi devono terminare con `PadaniaLibera`.
-* Il linguaggio è insensibile alle minuscole/maiuscole. Anzi, è insensibile, punto.
+* Il linguaggio è insensibile alle minuscole/maiuscole. Anzi, è insensibile punto.
 * `Italia` viene sostituito automaticamente con il più appropriato `Roma Ladrona`
 * Non esiste un equivalente del not. RusPython è il linguaggio del fare, non come gli altri linguaggi disfattisti.
 
 ## Grammatica
-La grammatica del linguaggio è un pò complessa, ma solo attraverso un accurato studio delle arti retoriche è possibile rendere messaggi complessi diregiribili per l'uomo comune.
+La grammatica del linguaggio è un pò complessa, ma solo attraverso un accurato studio delle arti retoriche è possibile rendere messaggi complessi diregiribili per l'uomo comune.   
 Ecco un assaggio di cosa sarai in grado di fare
 
 Operatori Aritmetici:
@@ -45,14 +45,15 @@ Operatori Aritmetici:
 * `maggiore` indica `più grande di`
 
 Variabili:
-* Puoi usare tutti gli spazi che vuoi per il nome delle tue variabili.
+* Puoi usare tutti gli spazi che vuoi per il nome delle tue variabili
 * Usa `,` se devi differenziare due variabili consecutive
 * Puoi effettuare un assegnamento così: `variabile è espressione` oppure `variabile sono espressione`
 * Le stringhe sono racchiuse da doppi apici `"Stringa"`
 
 Liste
 * Creare una lista vuota: `raderemo al suolo variabile`
-* Aggiungere un elemento alla lista: `nella variabile deporta indice`. Se vuoi anche specificare la posizione usa
+* Aggiungere un elemento alla lista: `nella variabile deporta indice`.   
+Se vuoi anche specificare la posizione usa
 `nella variabile deporta espressione nella cella indice`
 * Leggere un elemento dalla lista: `dalla variabile sgombera indice`
 * Ottenere la lunghezza della lista: `la dimensione di variabile`
