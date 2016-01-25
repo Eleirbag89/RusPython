@@ -21,7 +21,7 @@ Aggiungi la cartella di RusPython al `PATH` usando uno dei due comandi seguenti 
 
 ## Utilizzo
 * Scrivi un file ruspy usando l'opportuna sintassi (in bocca al lupo).
-* Esegui `RusPython /path/to/ruspy/file [parametri_opzionali]`
+* Esegui `RusPython /path/to/ruspy/file [parametri_input_script]`
 * Benvenuto nel magico mondo di RusPython!
 
 ## Funzionalità
