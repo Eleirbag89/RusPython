@@ -1,0 +1,61 @@
+Lista esaustiva delle regole di generazione della grammatica
+
+Rule 0     S' -> program
+Rule 1     program -> statements PADANIALIBERA
+Rule 2     program -> statements
+Rule 3     statements -> statement statements
+Rule 4     statements -> empty_statement
+Rule 5     empty_statement -> <empty>
+Rule 6     statement -> expression
+Rule 7     statement -> ATTENZIONE variable ESCLAMATION_POINT params end_params statements BASTA
+Rule 8     expression -> RICORDATE variable ESCLAMATION_POINT params_actual A CASA LORO
+Rule 9     end_params -> TORNINO A CASA LORO
+Rule 10    params -> variable E params
+Rule 11    params -> variable
+Rule 12    params -> <empty>
+Rule 13    params_actual -> expression E params_actual
+Rule 14    params_actual -> expression
+Rule 15    params_actual -> <empty>
+Rule 16    statement -> ESPELLI statement
+Rule 17    statement -> ESPELLILI statement
+Rule 18    statement -> variable EQUALS expression
+Rule 19    statement -> variable SONO expression
+Rule 20    expression -> variable EQUALS expression QUESTION_MARK statements POINT
+Rule 21    expression -> variable SONO expression QUESTION_MARK statements POINT
+Rule 22    expression -> variable MINORE expression QUESTION_MARK statements POINT
+Rule 23    expression -> variable MAGGIORE expression QUESTION_MARK statements POINT
+Rule 24    expression -> DQUOTE variable DQUOTE
+Rule 25    expression -> variable EQUALS expression QUESTION_MARK statements ALTRIMENTI statements POINT
+Rule 26    expression -> variable SONO expression QUESTION_MARK statements ALTRIMENTI statements POINT
+Rule 27    expression -> variable MINORE expression QUESTION_MARK statements ALTRIMENTI statements POINT
+Rule 28    expression -> variable MAGGIORE expression QUESTION_MARK statements ALTRIMENTI statements POINT
+Rule 29    statement -> URLA expression
+Rule 30    statement -> FINCHE variable MINORE expression SEMICOLON statements POINT
+Rule 31    statement -> FINCHE variable MAGGIORE expression SEMICOLON statements POINT
+Rule 32    statement -> FINCHE variable UGUALE expression SEMICOLON statements POINT
+Rule 33    expression -> statement PLUS statement
+Rule 34    expression -> statement MINUS statement
+Rule 35    expression -> statement TIMES statement
+Rule 36    expression -> statement DIVIDE statement
+Rule 37    expression -> RADEREMO AL SUOLO variable
+Rule 38    expression -> DA variable SGOMBERA expression
+Rule 39    expression -> DALLA variable SGOMBERA expression
+Rule 40    expression -> A variable DEPORTA expression
+Rule 41    expression -> A variable DEPORTA expression NELLA CELLA expression
+Rule 42    expression -> NELLA variable DEPORTA expression NELLA CELLA expression
+Rule 43    expression -> NELLA variable DEPORTA expression
+Rule 44    expression -> AL variable DEPORTA expression NELLA CELLA expression
+Rule 45    expression -> AL variable DEPORTA expression
+Rule 46    expression -> LA DIMENSIONE DI variable
+Rule 47    statement -> PER OGNI variable IN variable SEMICOLON statements POINT
+Rule 48    expression -> MINUS expression
+Rule 49    expression -> LPAREN expression RPAREN
+Rule 50    expression -> numbers
+Rule 51    numbers -> NUMBER
+Rule 52    numbers -> number_float
+Rule 53    number_float -> NUMBER COMMA NUMBER
+Rule 54    expression -> variable
+Rule 55    variable -> names
+Rule 56    variable -> names COMMA
+Rule 57    names -> NAME names
+Rule 58    names -> <empty>
