@@ -28,17 +28,14 @@ def main(argv=None):
 	
 	params = argv[2:]
 	header=util.addInputParamers(params)
-	s = util.caseInsensitivize(s)		
+	s = util.caseInsensitivize_and_fix(s)		
 	util.first_pass(s)
 	modu = header + ruspyparser.parse(s)
 	if debug:
 		print "Programma"
 		print modu
 		print "Execution"
-		try;
-			exec(compile(modu, filename="<string>", mode="exec"))
-		except:
-			exit()
+	exec(compile(modu, filename="<string>", mode="exec"))
 	if debug:
 		print "END"
 

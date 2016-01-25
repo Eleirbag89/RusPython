@@ -1,6 +1,6 @@
 import ruspyparser
 import re
-def caseInsensitivize(s):
+def caseInsensitivize_and_fix(s):
 	dquote_split = s.split("\"")
 	for i in range(0,len(dquote_split)):
 		if i % 2 == 0:
@@ -11,7 +11,12 @@ def caseInsensitivize(s):
 			case_insensitive =  case_insensitive +"\""+dquote_split[i]+"\""
 		else:
 			case_insensitive =  case_insensitive +dquote_split[i]
-	return case_insensitive
+	return fix_italia(case_insensitive)
+	
+def fix_italia(s):
+	cerca_straniero = re.compile(re.escape('italia'), re.IGNORECASE)
+	cerca_straniero = cerca_straniero.sub('Roma Ladrona', s)
+	return cerca_straniero
 	
 def addInputParamers(params):
 	header="frontiera=[]\n"
