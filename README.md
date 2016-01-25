@@ -29,7 +29,8 @@ RusPython include diverse funzionalità perfette per ogni aspirante leader della
 * Non ci sono istruzioni per effettuare gli import. Tutto il codice deve essere fatto a mano e "made in Padania".
 * Tutti i programmi devono terminare con `PadaniaLibera`.
 * Il linguaggio è insensibile alle minuscole/maiuscole. Anzi, è insensibile, punto.
-* Non esiste un equivalente del not. RusPy è il linguaggio del fare, non come gli altri linguaggi disfattisti.
+* `Italia` viene sostituito automaticamente con il più appropriato `Roma Ladrona`
+* Non esiste un equivalente del not. RusPython è il linguaggio del fare, non come gli altri linguaggi disfattisti.
 
 ## Grammatica
 La grammatica del linguaggio è un pò complessa, ma solo attraverso un accurato studio delle arti retoriche è possibile rendere messaggi complessi diregiribili per l'uomo comune.
