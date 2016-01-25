@@ -2,8 +2,9 @@
 Perché per Python ci vuole la RUSPA!!!
 
 ## Missione
-RusPython è un linguaggio di programmazione ispirato dall'illustre Matteo Salvini. Crediamo fermamente che l'attuale stato dell'arte dei moderni linguaggi di programmazione non sia in grado di ricreare la sua magnificenza espressiva e contenutistica.
-Se anche tu condividi la mia visione, RusPython è il linguaggio che fa per te!
+RusPython è un linguaggio di programmazione ispirato dall'illustre Matteo Salvini.   
+Crediamo fermamente che l'attuale stato dell'arte dei moderni linguaggi di programmazione non sia in grado di ricreare la sua magnificenza espressiva e contenutistica.   
+Se anche tu condividi la mia visione, RusPython è il linguaggio che fa per te!   
 Spero che mentre Matteo riuscirà nella sua impresa di liberare la Padania sa Roma ladrona, noi, nel nostro piccolo, libereremo il mondo dell'informatica dagli altri inutili linguaggi di programmazione.
 
 ## Installazione
@@ -71,17 +72,17 @@ Input/Output
 * Usando la lista `frontiera`
 * Usando la variabile `bingo bongo` per il primo parametro `bingo bongo bongo` per il secondo, `bingo bongo bongo bingo` per il terzo, `bingo bongo bongo bingo bongo bingo bongo bingo bongo` per l'ottavo e così via.
 
-Infine: A noi Padani non piace parlare dei propri errori, per cui molte volte il codice darà errore senza prendersi la briga di spiegare perché.
+Infine: A noi Padani non piace parlare dei propri errori, per cui molte volte il codice fallirà senza segnalare nulla.   
 Pensate ad debug come a un piccolo gioco fra di noi.
 
 ## Attivati
-Sentiti libero di contribuire al progetto con commit, idee, suggerimenti.
-Puoi creare fork e spinoff senza chiedere il permesso a nessuno (ok, però magari un piccolo link mettilo).
+Sentiti libero di contribuire al progetto con commit, idee, suggerimenti.   
+Puoi creare fork e spinoff senza chiedere il permesso a nessuno (ok, però magari un piccolo link mettilo).   
 Puoi contribuire anche scrivendo del codice RusPython e arricchendo la nostra galleria di esempi.
 
 ## Siccome in fondo siamo delle brave persone
-Se questa pagina ti ha divertito, rifletti sulla possibilità di fare una donazione ad un ente benefico impegnato nell'aiuto di rifugiati e profughi.
-Se sei più sul lato hacktivist, potrebbe donare qualcosa al collettivo [Autistici/Inventati](http://www.autistici.org/it/donate.html) 
+Se questa pagina ti ha divertito, rifletti sulla possibilità di fare una donazione ad un ente benefico impegnato nell'aiuto di rifugiati e profughi.   
+Se sei più sul lato hacktivist, potrebbe donare qualcosa al collettivo [Autistici/Inventati](http://www.autistici.org/it/donate.html)    
 Inoltre puoi fare una donazione ai ragazzi dietro [TrumScript](https://github.com/samshadwell/TrumpScript), il progetto che ha ispirato tutto questo: [Shadwell](https://paypal.me/Shadwell).
 
 ## Siccome siamo al verde
