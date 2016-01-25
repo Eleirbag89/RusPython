@@ -73,8 +73,9 @@ Input/Output
 * Usando la lista `frontiera`
 * Usando la variabile `bingo bongo` per il primo parametro `bingo bongo bongo` per il secondo, `bingo bongo bongo bingo` per il terzo, `bingo bongo bongo bingo bongo bingo bongo bingo bongo` per l'ottavo e così via.
 
-Infine: A noi Padani non piace parlare dei propri errori, per cui molte volte il codice fallirà senza segnalare nulla.   
-Pensate ad debug come a un piccolo gioco fra di noi.
+Infine:   
+A noi Padani non piace parlare dei propri errori, per cui molte volte il codice fallirà senza segnalare nulla.   
+Pensate al debug come a un piccolo gioco fra di noi.
 
 ## Attivati
 Sentiti libero di contribuire al progetto con commit, idee, suggerimenti.   
