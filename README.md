@@ -85,6 +85,6 @@ Se sei più sul lato hacktivist, potrebbe donare qualcosa al collettivo [Autisti
 Inoltre puoi fare una donazione ai ragazzi dietro [TrumScript](https://github.com/samshadwell/TrumpScript), il progetto che ha ispirato tutto questo: [Shadwell](https://paypal.me/Shadwell).
 
 ## Siccome siamo al verde
-Puoi offrirci una birra o due usando [Paypal](https://paypal.me/eleirbag89) 
-Oppure puoi flattrarci
+Puoi offrirci una birra o due usando [Paypal](https://paypal.me/eleirbag89)    
+Oppure puoi flattrarci   
 [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=eleirbag89&url=https://github.com/Eleirbag89/RusPython&title=RusPython&language=it&tags=github&category=software) 
