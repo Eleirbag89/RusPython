@@ -84,7 +84,7 @@ Puoi contribuire anche scrivendo del codice RusPython e arricchendo la nostra ga
 
 ## Siccome in fondo siamo delle brave persone
 Se questa pagina ti ha divertito, rifletti sulla possibilità di fare una donazione ad un ente benefico impegnato nell'aiuto di rifugiati e profughi.   
-Se sei più sul lato hacktivist, potrebbe donare qualcosa al collettivo [Autistici/Inventati](http://www.autistici.org/it/donate.html)    
+Se sei più sul lato hacktivist, potresti donare qualcosa al collettivo [Autistici/Inventati](http://www.autistici.org/it/donate.html)    
 Inoltre puoi fare una donazione ai ragazzi dietro [TrumScript](https://github.com/samshadwell/TrumpScript), il progetto che ha ispirato tutto questo: [Shadwell](https://paypal.me/Shadwell).
 
 ## Siccome siamo al verde
