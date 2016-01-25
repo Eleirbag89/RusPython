@@ -35,7 +35,10 @@ def main(argv=None):
 		print "Programma"
 		print modu
 		print "Execution"
-	exec(compile(modu, filename="<string>", mode="exec"))
+		try;
+			exec(compile(modu, filename="<string>", mode="exec"))
+		except:
+			exit()
 	if debug:
 		print "END"
 
