@@ -24,7 +24,7 @@ Aggiungi la cartella di RusPython al `PATH` usando uno dei due comandi seguenti 
 * Esegui `RusPython /path/to/ruspy/file [parametri_opzionali]`
 * Benvenuto nel magico mondo di RusPython!
 
-## Features
+## Funzionalità
 RusPython include diverse funzionalità perfette per ogni aspirante leader della Lega Nord:
 * Non ci sono istruzioni per effettuare gli import. Non vogliamo che codice straniero ci rubi il lavoro.
 * Tutti i programmi devono terminare con `PadaniaLibera`.
