@@ -1,4 +1,4 @@
-# TrumpScript <img src="https://raw.githubusercontent.com/Eleirbag89/RusPython/master/RusPython_logo.png" />
+# RusPython <img src="https://raw.githubusercontent.com/Eleirbag89/RusPython/master/RusPython_logo.png" />
 Perché per Python ci vuole la RUSPA!!!
 
 ## Missione
