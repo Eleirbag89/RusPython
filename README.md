@@ -78,6 +78,18 @@ Infine:
 A noi Padani non piace parlare dei propri errori, per cui molte volte il codice fallirà senza segnalare nulla.   
 Pensate al debug come a un piccolo gioco fra di noi.
 
+## Esempi
+* Fattoriale: Calcola il fattoriale di un numero in input.   
+Fattoriale di 5: `RusPython examples/Fattoriale.ruspy 5`
+* Fibonacci: Calcola i primi n valori della sequenza di Fibonacci in base al numero in input.   
+Primi 8: `RusPython examples/Fibonacci.ruspy 8`
+* Hello world: Semplice programma di esempio.   
+Lancialo con `RusPython examples/Hello_World.ruspy`
+* Or(d)inamento: Ordina la sequenza in input.   
+Esempio `RusPython examples/Ordinamento.ruspy 75 5 1 9 104 32`
+* ParamList: stampa sullo schermo tutti i parametri in input.   
+Esempio `RusPython examples/ParamList.ruspy 5 Borghezio 3.14`
+
 ## Attivati
 Sentiti libero di contribuire al progetto con commit, idee, suggerimenti.   
 Puoi creare fork e spinoff senza chiedere il permesso a nessuno (ok, però magari un piccolo link mettilo).   
