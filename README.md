@@ -48,7 +48,8 @@ Variabili:
 * Puoi usare tutti gli spazi che vuoi per il nome delle tue variabili
 * Usa `,` se devi differenziare due variabili consecutive
 * Puoi effettuare un assegnamento così: `variabile è espressione` oppure `variabile sono espressione`
-* Le stringhe sono racchiuse da doppi apici `"Stringa"`
+* Le stringhe sono racchiuse da doppi apici `"Stringa"`   
+* Puoi generare un numero casuale in un intervallo con `scegliete variabile fra espressione e espressione`
 
 Liste
 * Creare una lista vuota: `raderemo al suolo variabile`
@@ -69,10 +70,11 @@ Funzioni
 * Far ritornare un valore ad una funzione: `espelli valore`
 
 Input/Output
-* Stampare sullo schermo; `urla espressione`
-* I parametri passati allo script possono essere ottenuti in due modi:
-* Usando la lista `frontiera`
-* Usando la variabile `bingo bongo` per il primo parametro `bingo bongo bongo` per il secondo, `bingo bongo bongo bingo` per il terzo, `bingo bongo bongo bingo bongo bingo bongo bingo bongo` per l'ottavo e così via.
+* Stampare sullo schermo; `urla espressione`   
+* Leggere un valore inserito dall'utente nel terminale `ditemi variabile cosa volete`
+* I parametri passati allo script possono essere ottenuti in due modi:   
+* Usando la lista `frontiera`   
+* Usando la variabile `bingo bongo` per il primo parametro `bingo bongo bongo` per il secondo, `bingo bongo bongo bingo` per il terzo, `bingo bongo bongo bingo bongo bingo bongo bingo bongo` per l'ottavo e così via.   
 
 Infine:   
 A noi Padani non piace parlare dei propri errori, per cui molte volte il codice fallirà senza segnalare nulla.   
@@ -89,6 +91,8 @@ Lancialo con `RusPython examples/Hello_World.ruspy`
 Esempio `RusPython examples/Ordinamento.ruspy 75 5 1 9 104 32`
 * ParamList: stampa sullo schermo tutti i parametri in input.   
 Esempio `RusPython examples/ParamList.ruspy 5 Borghezio 3.14`
+* RitualeDelPo: gioca a indovinare il numero magico per ultimare il rituale.   
+Esempio `RusPython examples/RitualeDelPo.ruspy`
 
 ## Attivati
 Sentiti libero di contribuire al progetto con commit, idee, suggerimenti.   
