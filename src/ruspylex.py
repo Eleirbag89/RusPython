@@ -37,6 +37,11 @@ reserved = {
    'dimensione':'DIMENSIONE',
    'nella':'NELLA',
    'cella':'CELLA',
+   'ditemi':'DITEMI',
+   'cosa':'COSA',
+   'volete':'VOLETE',
+   'scegliete':'SCEGLIETE',
+   'fra':'FRA',
 }
 tokens = [
 	'NAME','NUMBER',
@@ -52,7 +57,6 @@ t_TIMES   = r'\*'
 t_COMMA   = r'\,'
 t_POINT  = r'\.'
 t_SEMICOLON  = r'\;'
-t_DQUOTE  = r'\"'
 t_QUESTION_MARK  = r'\?'
 t_ESCLAMATION_POINT  = r'\!'
 t_DIVIDE  = r'/'
@@ -60,14 +64,21 @@ t_EQUALS  = r'è'
 t_LPAREN  = r'\('
 t_RPAREN  = r'\)'
 
+
 def t_NAME(t):
     r'[a-zA-Z_][a-zA-Z_0-9]*'
-    t.type = reserved.get(t.value,'NAME')    # Check for reserved words
+    if not(lex.dquotes):
+		t.type = reserved.get(t.value,'NAME')    # Check for reserved words
     return t
-    
+
 def t_NUMBER(t):
 	r'\d+'
 	t.value = int(t.value)
+	return t
+	
+def t_DQUOTE(t):
+	r'\"'
+	lex.dquotes = not(lex.dquotes)
 	return t
 
 # Ignored characters
@@ -82,5 +93,5 @@ def t_error(t):
 	t.lexer.skip(1)
 
 # Build the lexer
-
+lex.dquotes= False
 lex.lex()

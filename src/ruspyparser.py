@@ -199,6 +199,29 @@ def p_expression_list_creation(p):
 		varName = names[p[4]]
 	p[0] = "global "+str(varName)+"\n"+str(varName) + "=[]"  
 	 
+def p_statement_random(p):
+	'''statement : SCEGLIETE variable FRA expression E expression'''
+	varName = ""
+	try:
+		varName = names[p[2]] 
+	except KeyError:
+		names[p[2]] = "var"+str(variable_counter[0])
+		variable_counter[0] = variable_counter[0]+1
+		varName = names[p[2]]
+	p[0] = str(varName) + "= random.randint(" + str(p[4]) +","+ str(p[6]) +")"
+	
+def p_statement_input_number(p):
+	'''statement : DITEMI variable COSA VOLETE'''
+	varName = ""
+	try:
+		varName = names[p[2]] 
+	except KeyError:
+		names[p[2]] = "var"+str(variable_counter[0])
+		variable_counter[0] = variable_counter[0]+1
+		varName = names[p[2]]
+	p[0] = str(varName) + "= input()"
+	
+	
 def p_expression_list_sgombera(p):
 	 '''expression : DA variable SGOMBERA expression
 				   | DALLA variable SGOMBERA expression'''

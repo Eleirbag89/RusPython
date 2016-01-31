@@ -19,7 +19,7 @@ def fix_italia(s):
 	return cerca_straniero
 	
 def addInputParamers(params):
-	header="frontiera=[]\n"
+	header="import random\nfrontiera=[]\n"
 	bingo = "bingo "
 	bongo = "bongo "
 	basename = "bingo bongo "
