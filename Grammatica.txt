@@ -38,24 +38,26 @@ Rule 34    expression -> statement MINUS statement
 Rule 35    expression -> statement TIMES statement
 Rule 36    expression -> statement DIVIDE statement
 Rule 37    expression -> RADEREMO AL SUOLO variable
-Rule 38    expression -> DA variable SGOMBERA expression
-Rule 39    expression -> DALLA variable SGOMBERA expression
-Rule 40    expression -> A variable DEPORTA expression
-Rule 41    expression -> A variable DEPORTA expression NELLA CELLA expression
-Rule 42    expression -> NELLA variable DEPORTA expression NELLA CELLA expression
-Rule 43    expression -> NELLA variable DEPORTA expression
-Rule 44    expression -> AL variable DEPORTA expression NELLA CELLA expression
-Rule 45    expression -> AL variable DEPORTA expression
-Rule 46    expression -> LA DIMENSIONE DI variable
-Rule 47    statement -> PER OGNI variable IN variable SEMICOLON statements POINT
-Rule 48    expression -> MINUS expression
-Rule 49    expression -> LPAREN expression RPAREN
-Rule 50    expression -> numbers
-Rule 51    numbers -> NUMBER
-Rule 52    numbers -> number_float
-Rule 53    number_float -> NUMBER COMMA NUMBER
-Rule 54    expression -> variable
-Rule 55    variable -> names
-Rule 56    variable -> names COMMA
-Rule 57    names -> NAME names
-Rule 58    names -> <empty>
+Rule 38    statement -> SCEGLIETE variable FRA expression E expression
+Rule 39    statement -> DITEMI variable COSA VOLETE
+Rule 40    expression -> DA variable SGOMBERA expression
+Rule 41    expression -> DALLA variable SGOMBERA expression
+Rule 42    expression -> A variable DEPORTA expression
+Rule 43    expression -> A variable DEPORTA expression NELLA CELLA expression
+Rule 44    expression -> NELLA variable DEPORTA expression NELLA CELLA expression
+Rule 45    expression -> NELLA variable DEPORTA expression
+Rule 46    expression -> AL variable DEPORTA expression NELLA CELLA expression
+Rule 47    expression -> AL variable DEPORTA expression
+Rule 48    expression -> LA DIMENSIONE DI variable
+Rule 49    statement -> PER OGNI variable IN variable SEMICOLON statements POINT
+Rule 50    expression -> MINUS expression
+Rule 51    expression -> LPAREN expression RPAREN
+Rule 52    expression -> numbers
+Rule 53    numbers -> NUMBER
+Rule 54    numbers -> number_float
+Rule 55    number_float -> NUMBER COMMA NUMBER
+Rule 56    expression -> variable
+Rule 57    variable -> names
+Rule 58    variable -> names COMMA
+Rule 59    names -> NAME names
+Rule 60    names -> <empty>

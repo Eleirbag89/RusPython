@@ -29,6 +29,8 @@ RusPython include diverse funzionalità perfette per ogni aspirante leader della
 * Non ci sono istruzioni per effettuare gli import. Non vogliamo che codice straniero ci rubi il lavoro.
 * Tutti i programmi devono terminare con `PadaniaLibera`.
 * Il linguaggio è insensibile alle minuscole/maiuscole. Anzi, è insensibile punto.
+* È il primo linguaggio di programmazione ad usare le closure mentali.
+* Il linguaggio è Turing Completo. A noi Padani non manca mai nulla.
 * `Italia` viene sostituito automaticamente con il più appropriato `Roma Ladrona`
 * Non esiste un equivalente del not. RusPython è il linguaggio del fare, non come gli altri linguaggi disfattisti.
 
