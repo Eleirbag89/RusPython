@@ -73,7 +73,7 @@ Funzioni
 
 Input/Output
 * Stampare sullo schermo; `urla espressione`   
-* Leggere un valore inserito dall'utente nel terminale `ditemi variabile cosa volete`
+* Leggere un valore numerico inserito dall'utente nel terminale `ditemi variabile cosa volete`
 * I parametri passati allo script possono essere ottenuti in due modi:   
 * Usando la lista `frontiera`   
 * Usando la variabile `bingo bongo` per il primo parametro `bingo bongo bongo` per il secondo, `bingo bongo bongo bingo` per il terzo, `bingo bongo bongo bingo bongo bingo bongo bingo bongo` per l'ottavo e così via.   
