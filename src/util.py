@@ -20,9 +20,9 @@ def fix_italia(s):
 	
 def addInputParamers(params):
 	header="import random\nfrontiera=[]\n"
-	bingo = "bingo "
-	bongo = "bongo "
-	basename = "bingo bongo "
+	bingo = "bingo"
+	bongo = "bongo"
+	basename = "bingobongo"
 	ruspyparser.names["frontiera "] = "frontiera"
 	for i in range(0,len(params)):
 		if i > 0:
