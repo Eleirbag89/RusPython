@@ -23,7 +23,7 @@ def addInputParamers(params):
 	bingo = "bingo"
 	bongo = "bongo"
 	basename = "bingobongo"
-	ruspyparser.names["frontiera "] = "frontiera"
+	ruspyparser.names["frontiera"] = "frontiera"
 	for i in range(0,len(params)):
 		if i > 0:
 			if i%2 == 0:
@@ -42,5 +42,5 @@ def first_pass(s):
 	counter = 0
 	foreach_var = re.findall('ogni(.*?)in',s)
 	for var in foreach_var:
-		ruspyparser.names[var.strip()+" "] = "loop"+str(counter)
+		ruspyparser.names[var.strip()] = "loop"+str(counter)
 		counter = counter+1
