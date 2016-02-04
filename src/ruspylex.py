@@ -49,21 +49,7 @@ tokens = [
 	'LPAREN','RPAREN','COMMA', 'POINT', 'DQUOTE', 'SEMICOLON'
 	] + list(reserved.values())
 
-# Tokens
-
-t_PLUS    = r'\+'
-t_MINUS   = r'-'
-t_TIMES   = r'\*'
-t_COMMA   = r'\,'
-t_POINT  = r'\.'
-t_SEMICOLON  = r'\;'
-t_QUESTION_MARK  = r'\?'
-t_ESCLAMATION_POINT  = r'\!'
-t_DIVIDE  = r'/'
-t_EQUALS  = r'è'
-t_LPAREN  = r'\('
-t_RPAREN  = r'\)'
-
+#TOKENS
 
 def t_NAME(t):
     r'[a-zA-Z_][a-zA-Z_0-9]*'
@@ -73,8 +59,103 @@ def t_NAME(t):
 
 def t_NUMBER(t):
 	r'\d+'
-	t.value = int(t.value)
+	if not(lex.dquotes):
+		t.value = int(t.value)    
+		return t
+	t.type = 'NAME'
 	return t
+
+def t_POINT(t):
+	r'\.'
+	if lex.dquotes:
+		t.type = 'NAME'  # Check for reserved words
+		t.value = '.'
+	return t
+
+def t_COMMA(t):
+	r'\,'
+	if lex.dquotes:
+		t.type = 'NAME'  # Check for reserved words
+		t.value = ','
+	return t
+	
+def t_QUESTION_MARK(t):
+	r'\?'
+	if lex.dquotes:
+		t.type = 'NAME'  # Check for reserved words
+		t.value = '?'
+	return t
+
+def t_ESCLAMATION_POINT(t):
+	r'\!'
+	if lex.dquotes:
+		t.type = 'NAME'  # Check for reserved words
+		t.value = '!'
+	return t
+
+def t_SEMICOLON(t):
+	r'\;'
+	if lex.dquotes:
+		t.type = 'NAME'  # Check for reserved words
+		t.value = ';'
+	return t
+
+def t_DIVIDE(t):
+	r'/'
+	if lex.dquotes:
+		t.type = 'NAME'  # Check for reserved words
+		t.value = '/'
+	return t
+	
+def t_EQUALS(t):
+	r'è'
+	if lex.dquotes:
+		t.type = 'NAME'  # Check for reserved words
+		t.value = 'è'
+	return t
+	
+def t_PLUS(t):
+	r'\+'
+	if lex.dquotes:
+		t.type = 'NAME'  # Check for reserved words
+		t.value = '+'
+	return t
+
+def t_MINUS(t):
+	r'-'
+	if lex.dquotes:
+		t.type = 'NAME'  # Check for reserved words
+		t.value = '-'
+	return t	
+	
+def t_TIMES(t):
+	r'\*'
+	if lex.dquotes:
+		t.type = 'NAME'  # Check for reserved words
+		t.value = '*'
+	return t	
+		
+def t_LPAREN(t):
+	r'\('
+	if lex.dquotes:
+		t.type = 'NAME'  # Check for reserved words
+		t.value = '('
+	return t	
+
+def t_RPAREN(t):
+	r'\)'
+	if lex.dquotes:
+		t.type = 'NAME'  # Check for reserved words
+		t.value = ')'
+	return t	
+	
+def t_SPACE(t):
+	r'\ '
+	if lex.dquotes:
+		t.type = 'NAME'  # Check for reserved words
+		t.value = ' '
+		return t
+	else: pass
 	
 def t_DQUOTE(t):
 	r'\"'
@@ -82,7 +163,7 @@ def t_DQUOTE(t):
 	return t
 
 # Ignored characters
-t_ignore = " \t"
+t_ignore = "\t"
 
 def t_newline(t):
 	r'\n+'

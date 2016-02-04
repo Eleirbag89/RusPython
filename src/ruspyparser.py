@@ -297,8 +297,8 @@ def p_variable_name(p):
 	
 def p_variable_names(p):
 	'names : NAME names'
-	p[0] = str(p[1])+" "+str(p[2])
-	
+	p[0] = str(p[1])+str(p[2])
+		
 def p_variable_names_empty(p):
 	'names :'
 	p[0] = ""
