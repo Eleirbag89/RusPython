@@ -83,13 +83,13 @@ A noi Padani non piace parlare dei propri errori, per cui molte volte il codice 
 Pensate al debug come a un piccolo gioco fra di noi.
 
 ## Esempi
-`Attenzione padani ! Gli Africani tornino a casa loro   
-milioni sono 0 tutti sono 1   
-gli Africani sono milioni? Espellili tutti.    
-espelli gli Africani * Ricordate padani! Gli Africani-Tutti a casa loro    
-Basta   
-Urla ricordate padani! Bingo bongo a casa loro   
-PadaniaLibera`   
+`Attenzione padani ! Gli Africani tornino a casa loro`   
+`milioni sono 0 tutti sono 1`   
+`gli Africani sono milioni? Espellili tutti.`    
+`espelli gli Africani * Ricordate padani! Gli Africani-Tutti a casa loro`    
+`Basta`   
+`Urla ricordate padani! Bingo bongo a casa loro`   
+`PadaniaLibera`   
 Questo codice definisce una funzione chiamata "padani" che calcola il fattoriale in maniera ricorsiva.   
 
 Di seguito la lista con tutti gli script creati fino ad ora e come utilizzarli
