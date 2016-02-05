@@ -105,7 +105,7 @@ Esempio `RusPython examples/Ordinamento.ruspy 75 5 1 9 104 32`
 Esempio `RusPython examples/ParamList.ruspy 5 Borghezio 3.14`
 * RitualeDelPo: gioca a indovinare il numero magico per ultimare il rituale.   
 Esempio `RusPython examples/RitualeDelPo.ruspy`
-* Matrimonio: Controlla se due parametri di input possono sposarsi.
+* Matrimonio: Controlla se due parametri di input possono sposarsi.   
 Esempio `RusPython examples/Matrimonio.ruspy 5 5`
 
 ## Attivati
