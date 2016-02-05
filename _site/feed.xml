@@ -3,10 +3,10 @@
   <channel>
     <title>RusPython</title>
     <description>RusPython: perché per Python ci vuole la RUSPA!!!</description>
-    <link>http://eleirbag89.github.io/RusPython//</link>
-    <atom:link href="http://eleirbag89.github.io/RusPython//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 05 Feb 2016 12:10:05 +0100</pubDate>
-    <lastBuildDate>Fri, 05 Feb 2016 12:10:05 +0100</lastBuildDate>
+    <link>http://eleirbag89.github.io//RusPython/</link>
+    <atom:link href="http://eleirbag89.github.io//RusPython/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 05 Feb 2016 12:12:00 +0100</pubDate>
+    <lastBuildDate>Fri, 05 Feb 2016 12:12:00 +0100</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -18,8 +18,8 @@ Per il momento, oggi e sempre &lt;br /&gt;
 &lt;code class=&quot;highlighter-rouge&quot;&gt;PadaniaLibera&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 05 Feb 2016 10:52:55 +0100</pubDate>
-        <link>http://eleirbag89.github.io/RusPython//random/stuff/2016/02/05/primo-post.html</link>
-        <guid isPermaLink="true">http://eleirbag89.github.io/RusPython//random/stuff/2016/02/05/primo-post.html</guid>
+        <link>http://eleirbag89.github.io//RusPython/random/stuff/2016/02/05/primo-post.html</link>
+        <guid isPermaLink="true">http://eleirbag89.github.io//RusPython/random/stuff/2016/02/05/primo-post.html</guid>
         
         
         <category>random</category>
