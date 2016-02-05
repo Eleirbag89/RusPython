@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RusPython</title>
+    <description>RusPython: perché per Python ci vuole la RUSPA!!!</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 05 Feb 2016 11:50:48 +0100</pubDate>
+    <lastBuildDate>Fri, 05 Feb 2016 11:50:48 +0100</lastBuildDate>
+    <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Primo Post!</title>
+        <description>&lt;p&gt;Questo è il primo post della sezione blog. &lt;br /&gt;
+Non so ancora se e per cosa la utilizzerò, probabilmente sarà un dev-blog con alcune spiegazioni tecniche su come è stato realizzato RusPython. &lt;br /&gt;
+Di sicuro che qualcosa mi verrà in mente. &lt;br /&gt;
+Per il momento, oggi e sempre &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;PadaniaLibera&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 05 Feb 2016 10:52:55 +0100</pubDate>
+        <link>http://yourdomain.com/random/stuff/2016/02/05/primo-post.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/random/stuff/2016/02/05/primo-post.html</guid>
+        
+        
+        <category>random</category>
+        
+        <category>stuff</category>
+        
+      </item>
+    
+  </channel>
+</rss>
