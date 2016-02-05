@@ -10,8 +10,8 @@ title: RusPython
 email: gabry.grillo@alice.it
 image_header: RusPython_logo.png
 description: "RusPython: perché per Python ci vuole la RUSPA!!!"
-baseurl: "/RusPython" # the subpath of your site, e.g. /blog
-url: "http://eleirbag89.github.io/" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://ruspython.ienadeprex.com/" # the base hostname & protocol for your site
 github_username:  Eleirbag89
 
 # Build settings
