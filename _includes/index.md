@@ -13,8 +13,8 @@ git clone https://github.com/Eleirbag89/RusPython.git
 
 Aggiungi la cartella di RusPython al `PATH` usando uno dei due comandi seguenti (su Linux)
 
-1. Temporaneo: Scrivi `export PATH=$PATH:/path/to/TrumpScript/bin` nel terminale.
-2. Permanente: Aggiungi `export PATH=$PATH:/path/to/TrumpScript/bin` alla fine del tuo file `~/.bashrc`.
+1. Temporaneo: Scrivi `export PATH=$PATH:/path/to/RusPython` nel terminale.
+2. Permanente: Aggiungi `export PATH=$PATH:/path/to/RusPython` alla fine del tuo file `~/.bashrc`.
 
 ## Utilizzo
 -  Scrivi un file ruspy usando l'opportuna sintassi (in bocca al lupo).
