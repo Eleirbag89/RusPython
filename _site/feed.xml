@@ -5,9 +5,63 @@
     <description>RusPython: perché per Python ci vuole la RUSPA!!!</description>
     <link>http://ruspython.ienadeprex.com//</link>
     <atom:link href="http://ruspython.ienadeprex.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 05 Feb 2016 12:40:38 +0100</pubDate>
-    <lastBuildDate>Fri, 05 Feb 2016 12:40:38 +0100</lastBuildDate>
+    <pubDate>Wed, 10 Feb 2016 21:35:54 +0100</pubDate>
+    <lastBuildDate>Wed, 10 Feb 2016 21:35:54 +0100</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Cose tecniche noiose</title>
+        <description>&lt;p&gt;Per prima cosa fatevi ringraziare: in tanti siete venuti a dare un’occhiata su questo sito e sembra che l’idea vi sia piaciuta molto. &lt;br /&gt;
+Non so dovremmo esserne felici oppure atterriti, ma abbiamo deciso in maniera non democratica di vedere solo il lato positivo. &lt;br /&gt;
+Vi rubo solo altre due righe per ringraziare due pagine Facebook in particolare: &lt;br /&gt;
+&lt;a href=&quot;https://www.facebook.com/robadainformatici/&quot;&gt;Roba da Informatici&lt;/a&gt; e &lt;a href=&quot;https://www.facebook.com/gensav1/&quot;&gt;Generatore automatico di post di Salvini&lt;/a&gt; per il gentilissimo feedback ricevuto.&lt;/p&gt;
+
+&lt;p&gt;Questo post è dedicato ai tre o quattro nerd che si sono chiesti come sia possibile creare un linguaggio di programmazione come RusPython. &lt;br /&gt;
+Per cominciare, RusPython non è un fork di TrumScript, la logica è diversa e (non per vantarsi) RusPython ha anche qualche funzione in più. &lt;br /&gt;
+Detto questo, come tutti i compilatori/interpreti che ammorbano il mondo con la loro presenza, RusPython è composto da 2 elementi fondamentali. &lt;br /&gt;
+Il primo è il &lt;code class=&quot;highlighter-rouge&quot;&gt;lexer&lt;/code&gt; che si occupa di analizzare i caratteri del codice sorgente ruspy e generare una lista di Token. 
+Ad esempio quando il &lt;code class=&quot;highlighter-rouge&quot;&gt;lexer&lt;/code&gt; si imbatte nel carattere &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt;, lo etichetta come &lt;code class=&quot;highlighter-rouge&quot;&gt;PLUS&lt;/code&gt; e continua a esaminare il resto del codice. &lt;br /&gt;
+Qando invece legge &lt;code class=&quot;highlighter-rouge&quot;&gt;Renzi&lt;/code&gt; lo etichetta come &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;55&lt;/code&gt; come &lt;code class=&quot;highlighter-rouge&quot;&gt;NUMBER&lt;/code&gt; e così via. &lt;br /&gt;
+La seconda componente fondamentale è il &lt;code class=&quot;highlighter-rouge&quot;&gt;parser&lt;/code&gt;. Il &lt;code class=&quot;highlighter-rouge&quot;&gt;parser&lt;/code&gt; legge i token creati dal lexer e cerca di applicare una regola della grammatica generatrice del RusPython &lt;a href=&quot;https://raw.githubusercontent.com/Eleirbag89/RusPython/master/Grammatica.txt&quot;&gt;che potete trovare qui&lt;/a&gt;. &lt;br /&gt;
+Potremmo parlare della grammatica per ore, ma giusto per fare una piccola introduzione, la grammatica definisce com’è fatto programma ruspy valido. &lt;br /&gt;
+Un &lt;code class=&quot;highlighter-rouge&quot;&gt;program&lt;/code&gt; ad esempio è una lista di &lt;code class=&quot;highlighter-rouge&quot;&gt;statement&lt;/code&gt; che termina con il token &lt;code class=&quot;highlighter-rouge&quot;&gt;PadaniaLibera&lt;/code&gt;; uno &lt;code class=&quot;highlighter-rouge&quot;&gt;statement&lt;/code&gt; può essere il token &lt;code class=&quot;highlighter-rouge&quot;&gt;ESPELLI&lt;/code&gt; seguito da uno &lt;code class=&quot;highlighter-rouge&quot;&gt;statement&lt;/code&gt;. &lt;br /&gt;
+Una volta capita quale regola applicare, il &lt;code class=&quot;highlighter-rouge&quot;&gt;parser&lt;/code&gt; esegue il metodo associato alla regola e ritorna una stringa. &lt;br /&gt;
+La stringa finale ottenuta al termine del lavoro del parser è un normale listato in Python che posso, più o meno, far eseguire all’interprete Python così com’è. &lt;br /&gt;
+Più o meno perché ci sono alcuni aspetti (come i parametri di input in uno script) che devono essere aggiunti al volo. &lt;br /&gt;
+Per implementare &lt;code class=&quot;highlighter-rouge&quot;&gt;lexer&lt;/code&gt; e &lt;code class=&quot;highlighter-rouge&quot;&gt;parser&lt;/code&gt; ho usato una libreria chiamata &lt;a href=&quot;http://www.dabeaz.com/ply/&quot;&gt;PLY&lt;/a&gt; che mi ha snellito di molto il lavoro. L’alternativa è implementarvi il vostro &lt;code class=&quot;highlighter-rouge&quot;&gt;lexer&lt;/code&gt; e &lt;code class=&quot;highlighter-rouge&quot;&gt;parser&lt;/code&gt; casalingo come fa TrumScript. Qualunque sia la via del guerriero che sceglierete la struttura base rimane la stessa. &lt;br /&gt;
+Per il momento è tutto, se qualcuno è interessato all’argomento può contattarci e magari scriveremo qualche altro articolo più dettagliato sull’argomento. &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;PadaniaLibera&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 10 Feb 2016 21:26:55 +0100</pubDate>
+        <link>http://ruspython.ienadeprex.com//nerderia/2016/02/10/cose-tecniche-noiose.html</link>
+        <guid isPermaLink="true">http://ruspython.ienadeprex.com//nerderia/2016/02/10/cose-tecniche-noiose.html</guid>
+        
+        
+        <category>nerderia</category>
+        
+      </item>
+    
+      <item>
+        <title>Sui genitori culattoni</title>
+        <description>&lt;p&gt;Tutti sappiamo che l’idea che due uomini o, peggio ancora, due donne possano creare una famiglia è qualcosa di abberrante. &lt;br /&gt;
+È ovvio che i “figli” di genitori culattoni non possano far altro che crescere culattoni, intaccando la virilità è fecondità del suol Padano. &lt;br /&gt;
+Perfino le scienze matematiche e statistiche sono state plagiate dall’indecente teoria del gender osando affermare che il 99% degli omosessuali siano stati concepiti da genitori eterosessuali! &lt;br /&gt;
+Per evitare alcun tipo di confusione nel maschissimo Programmatore Padano, ecco un semplice ma utilissimo programma per verificare se due variabili possono sposarsi o meno:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Bingo bongo è bingo bongo bongo ? urla &quot;I culattoni non possono sposarsi!&quot; altrimenti urla &quot;La famiglia naturale è salva&quot;.&lt;/code&gt; &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;PadaniaLibera&lt;/code&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 05 Feb 2016 17:21:55 +0100</pubDate>
+        <link>http://ruspython.ienadeprex.com//codice/politca/2016/02/05/genitori-culattoni.html</link>
+        <guid isPermaLink="true">http://ruspython.ienadeprex.com//codice/politca/2016/02/05/genitori-culattoni.html</guid>
+        
+        
+        <category>codice</category>
+        
+        <category>politca</category>
+        
+      </item>
     
       <item>
         <title>Primo Post!</title>
