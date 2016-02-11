@@ -8,7 +8,7 @@ Se anche tu condividi la nostra visione, RusPython è il linguaggio che fa per t
 Spero che mentre Matteo riuscirà nella sua impresa di liberare la Padania da Roma ladrona, noi, nel nostro piccolo, libereremo il mondo dell'informatica dagli altri inutili, se non dannosi, linguaggi di programmazione.
 
 ## Installazione
-RusPython funziona è progettato per funzioanre su Python 2.7.   
+RusPython è progettato per funzionare su Python 2.7.   
 Per usarlo scarica ed estrai il file .zip  oppure clona il repository digitando
 
 ```bash
