@@ -5,9 +5,55 @@
     <description>RusPython: perché per Python ci vuole la RUSPA!!!</description>
     <link>http://ruspython.ienadeprex.com//</link>
     <atom:link href="http://ruspython.ienadeprex.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 13 Feb 2016 13:07:15 +0100</pubDate>
-    <lastBuildDate>Sat, 13 Feb 2016 13:07:15 +0100</lastBuildDate>
+    <pubDate>Sun, 14 Feb 2016 00:51:56 +0100</pubDate>
+    <lastBuildDate>Sun, 14 Feb 2016 00:51:56 +0100</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Salto di qualità: un server web in RusPython!</title>
+        <description>&lt;p&gt;Fatemi ringraziare Alessandro S. che ha deciso di collaborare a RusPython con una generosa donazione e ci ha spinto in parte a lavorare a questo aggiornamento di RusPython abbastanza corposo. &lt;br /&gt;
+Abbiamo aggiunto un primo supporto per File, Thread e Socket… Ben presto tutti gli altri linguaggi do programmazione non avranno alcun motivo di esistere. &lt;br /&gt;
+Per essere certi che tutto funzionasse a dovere abbiamo pensato bene di realizzare un server web in Ruspython! &lt;br /&gt;
+Stiamo anche pensando di creare un mirror di questo sito e farlo eseguire da lì, se qualcuno ha un RaspberryPI o simile con uno spazietto libero faccia un fischio! &lt;br /&gt;
+Ecco a voi la versione integrale del sorgente, che trovate anche sul repository:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Attenzione padani! Renzi e super tornino a casa loro&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;lavoro è 1&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;poveri è -3&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Vergogna è Renzi che regala 1024 euri&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;cpt è segrega vergogna,&lt;/code&gt;   &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;troppa è la dimensione di cpt,&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;troppa è 0? espelli &quot;&quot; .&lt;/code&gt;   &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;cpt è dalla cpt sgombera 1&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;cpt è &quot;/&quot; ? tasse è &quot;index.html&quot; altrimenti cpt è &quot;&quot; ? tasse è &quot;index.html&quot; altrimenti tasse è cpt rubano lavoro e &quot;&quot;..&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;cartella super+tasse? tasse è tasse+&quot;/index.html&quot;.&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;esiste super+tasse? governo è leggermente super+tasse, riforme è governo infame altrimenti riforme è &quot;Errore 404: Pagina non trovata&quot;.&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ministro è tasse ruba poveri e &quot;&quot;&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ministro è &quot;css&quot; ? soldi è &quot;Content-Type: text/css\r\n\r\n&quot; altrimenti soldi è &quot;Content-Type: text/html\r\n\r\n&quot;.&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;dico a Renzi: &quot;HTTP/1.0 200 OK\r\n&quot;+soldi+riforme!&lt;/code&gt;   &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Uccidiamo Renzi!&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Basta&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Alfano è spione&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Alfano ama bingo bongo bongo e odia bingo bongo bongo bingo,&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Alfano ascolta a 1&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Io sono 1&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;finche io uguale 1;&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;campo rom è rifiutiamo Alfano !&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Bersani è da campo rom sgombera 0&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Giovanardi è da campo rom sgombera 1&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Giovanardi è da Giovanardi sgombera 0&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;mandiamo padani a lavorare con Bersani e bingo bongo!&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;urla &quot;Connessione ricevuta da:&quot;+Giovanardi.&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;PadaniaLibera&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 14 Feb 2016 00:26:55 +0100</pubDate>
+        <link>http://ruspython.ienadeprex.com//nerderia/2016/02/14/salto-di-qualita-un-server-web-in-ruspython.html</link>
+        <guid isPermaLink="true">http://ruspython.ienadeprex.com//nerderia/2016/02/14/salto-di-qualita-un-server-web-in-ruspython.html</guid>
+        
+        
+        <category>nerderia</category>
+        
+      </item>
     
       <item>
         <title>Cose tecniche noiose</title>
