@@ -42,6 +42,8 @@ reserved = {
    'volete':'VOLETE',
    'scegliete':'SCEGLIETE',
    'fra':'FRA',
+   'rubano':'RUBANO',
+   'ruba':'RUBA',
 }
 tokens = [
 	'NAME','NUMBER',

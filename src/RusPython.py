@@ -38,8 +38,11 @@ def main(argv=None):
 		print "Execution"
 	try:
 		exec(compile(modu, filename="<string>", mode="exec"))
-	except:
-		print "Tutto è andato bene, non preoccuparti"
+	except Exception,e:
+		if debug:
+			print str(e)
+		else:
+			print "Tutto è andato bene, non preoccuparti"
 	if debug:
 		print "END"
 

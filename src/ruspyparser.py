@@ -227,6 +227,11 @@ def p_expression_list_sgombera(p):
 				   | DALLA variable SGOMBERA expression'''
 	 p[0] = names[p[2]]+str("[")+str(p[4])+str("]")
 
+def p_expression_list_sublist(p):
+	 '''expression : variable RUBANO expression E expression
+				   | variable RUBA expression E expression'''
+	 p[0] = names[p[1]]+str("[")+str(p[3])+str(":")+str(p[5])+str("]")
+
 def p_expression_list_deporta(p):
 	 '''expression : A variable DEPORTA expression
 	               | A variable DEPORTA expression NELLA CELLA expression
