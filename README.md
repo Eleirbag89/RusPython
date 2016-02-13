@@ -55,12 +55,14 @@ Variabili:
 * Puoi generare un numero casuale in un intervallo con `scegliete variabile fra espressione e espressione`
 
 Liste
+Ricordate che le stirnghe sono liste di caratteri!   
 * Creare una lista vuota: `raderemo al suolo variabile`
 * Aggiungere un elemento alla lista: `nella variabile deporta indice`.   
 Se vuoi anche specificare la posizione usa
 `nella variabile deporta espressione nella cella indice`
 * Leggere un elemento dalla lista: `dalla variabile sgombera indice`
 * Ottenere la lunghezza della lista: `la dimensione di variabile`
+* Estrarre una sottolista: `variabile RUBA/RUBANO espressione e espressione`   
 
 Controllo del flusso
 * Per creare un costrutto IF: `variabile è/sono espressione ? istruzioni [ALTRIMENTI istruzioni].` Oppure usa `minore` o `maggiore`
