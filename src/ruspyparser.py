@@ -262,8 +262,8 @@ def p_statement_for_each(p):
 
 
 def p_expression_uminus(p):
-	'expression : MINUS expression %prec UMINUS'
-	p[0] = -p[2]
+	'expression : MINUS statement %prec UMINUS'
+	p[0] = "-"+p[2]
 
 def p_expression_group(p):
 	'expression : LPAREN expression RPAREN'
