@@ -58,6 +58,16 @@ def p_statement_function_invoke(p):
 	'expression : RICORDATE variable ESCLAMATION_POINT params_actual A CASA LORO'
 	tmp = str(p[2]).rstrip().replace(" ", "_")+"("+p[4]+")"
 	p[0] = tmp
+
+def p_statement_function_thread(p):
+	'''expression : MANDIAMO variable A LAVORARE CON params_actual ESCLAMATION_POINT
+				  | MANDIAMO variable A LAVORARE ESCLAMATION_POINT'''
+	tmp = "import thread\n"
+	if len(p) > 6:
+		tmp = tmp + "thread.start_new_thread("+str(p[2]).rstrip().replace(" ", "_")+",("+p[6]+",))"
+	else:
+		tmp = tmp + "thread.start_new_thread("+str(p[2]).rstrip().replace(" ", "_")+",())"
+	p[0] = tmp
 	
 def p_function_end_params(p):
 	'end_params : TORNINO A CASA LORO'
@@ -110,7 +120,50 @@ def p_statement_assign(p):
 		variable_counter[0] = variable_counter[0]+1
 		varName = names[p[1]]
 	p[0] = str(varName) + "=" + str(p[3]) 
-    
+	
+def p_statement_open_file_read(p):
+	'expression : LEGGERMENTE expression'
+	p[0] = "open("+p[2]+", 'r')"
+	
+def p_statement_read_all_file(p):
+	'expression : expression INFAME'
+	p[0] = p[1]+".read()"
+
+def p_statement_assign_socket(p):
+	'statement : variable EQUALS SPIONE'
+	varName = ""
+	try:
+		varName = names[p[1]] 
+	except KeyError:
+		names[p[1]] = "var"+str(variable_counter[0])
+		variable_counter[0] = variable_counter[0]+1
+		varName = names[p[1]]
+	p[0] = str(varName) + "= socket.socket(socket.AF_INET, socket.SOCK_STREAM)" 
+
+def p_expression_bind_socket(p):
+	'expression : statement AMA expression E ODIA expression'
+	p[0] = str(p[1]) +".bind(("+p[3]+","+p[6]+"))"
+	
+def p_expression_listen_socket(p):
+	'expression : statement ASCOLTA A expression'
+	p[0] = str(p[1]) +".listen("+p[4]+")"
+
+def p_expression_receive_socket(p):
+	'expression : statement CHE REGALA expression EURI'
+	p[0] = str(p[1]) +".recv("+p[4]+")"
+	
+def p_expression_sendall_socket(p):
+	'expression : DICO A statement DPOINT expression ESCLAMATION_POINT'
+	p[0] = str(p[3]) +".sendall("+p[5]+")"
+
+def p_expression_close_socket(p):
+	'expression : UCCIDIAMO statement ESCLAMATION_POINT'
+	p[0] = str(p[2]) +".close()"
+	
+def p_expression_accept_socket(p):
+	'expression : RIFIUTIAMO statement ESCLAMATION_POINT'
+	p[0] = str(p[2]) +".accept()"
+	
 def p_statement_if(p):
 	'''expression : variable EQUALS expression QUESTION_MARK statements POINT
 				  | variable SONO expression QUESTION_MARK statements POINT
@@ -130,6 +183,24 @@ def p_statement_if(p):
 		tmp = tmp +"\n\t"+stm
 	p[0] = tmp
 	
+def p_statement_if_file(p):
+	'expression : ESISTE expression QUESTION_MARK statements POINT'
+
+	tmp = "import os.path\nif os.path.exists("+str(p[2])+"):"
+	substm = str(p[4]).split('\n')
+	for stm in substm:
+		tmp = tmp +"\n\t"+stm
+	p[0] = tmp
+	
+def p_statement_if_dir(p):
+	'expression : CARTELLA expression QUESTION_MARK statements POINT'
+
+	tmp = "import os.path\nif os.path.isdir("+str(p[2])+"):"
+	substm = str(p[4]).split('\n')
+	for stm in substm:
+		tmp = tmp +"\n\t"+stm
+	p[0] = tmp
+
 def p_expression_string(p):
 	'expression : DQUOTE variable DQUOTE'
 	p[0] = "\""+str(p[2]).rstrip()+"\""
@@ -157,6 +228,30 @@ def p_statement_if_else(p):
 		tmp = tmp +"\n\t"+stm
 	p[0] = tmp
 	
+def p_statement_if_else_file(p):
+	'expression : ESISTE expression QUESTION_MARK statements ALTRIMENTI statements POINT'
+	tmp = "import os.path\nif os.path.exists("+str(p[2])+"):"
+	substm = str(p[4]).split('\n')
+	for stm in substm:
+		tmp = tmp +"\n\t"+stm
+	tmp = tmp + "\nelse:"
+	substm = str(p[6]).split('\n')
+	for stm in substm:
+		tmp = tmp +"\n\t"+stm
+	p[0] = tmp
+	
+def p_statement_if_else_dir(p):
+	'expression : CARTELLA expression QUESTION_MARK statements ALTRIMENTI statements POINT'
+	tmp = "import os.path\nif os.path.isdir("+str(p[2])+"):"
+	substm = str(p[4]).split('\n')
+	for stm in substm:
+		tmp = tmp +"\n\t"+stm
+	tmp = tmp + "\nelse:"
+	substm = str(p[6]).split('\n')
+	for stm in substm:
+		tmp = tmp +"\n\t"+stm
+	p[0] = tmp
+
 def p_statement_urla(p):
 	'statement : URLA expression'
 	p[0] = "print "+str(p[2])
@@ -230,7 +325,23 @@ def p_expression_list_sgombera(p):
 def p_expression_list_sublist(p):
 	 '''expression : variable RUBANO expression E expression
 				   | variable RUBA expression E expression'''
-	 p[0] = names[p[1]]+str("[")+str(p[3])+str(":")+str(p[5])+str("]")
+	 first_index = p[3]
+	 second_index = p[5]
+	 if first_index == "\"\"":
+		first_index = ""
+	 if second_index == "\"\"":
+		second_index = ""
+	 p[0] = names[p[1]]+str("[")+str(first_index)+str(":")+str(second_index)+str("]")
+	 
+	 
+def p_expression_cerca(p):
+	'''expression : SEGREGA expression IN expression
+				   | SEGREGA expression'''
+	if len(p) > 4:
+		code = p[2]+".split("+p[4]+")"
+	else:
+		code = p[2]+".split()"
+	p[0] = code
 
 def p_expression_list_deporta(p):
 	 '''expression : A variable DEPORTA expression

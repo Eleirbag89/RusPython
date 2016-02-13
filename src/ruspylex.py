@@ -44,11 +44,29 @@ reserved = {
    'fra':'FRA',
    'rubano':'RUBANO',
    'ruba':'RUBA',
+   'segrega':'SEGREGA',
+   'mandiamo':'MANDIAMO',
+   'lavorare':'LAVORARE',
+   'con':'CON',
+   'spione':'SPIONE',
+   'ama':'AMA',
+   'odia':'ODIA',
+   'ascolta':'ASCOLTA',
+   'che':'CHE',
+   'regala':'REGALA',
+   'euri':'EURI',
+   'dico':'DICO',
+   'uccidiamo':'UCCIDIAMO',
+   'rifiutiamo':'RIFIUTIAMO',
+   'esiste':'ESISTE',
+   'cartella':'CARTELLA',
+   'leggermente':'LEGGERMENTE',
+   'infame':'INFAME',
 }
 tokens = [
 	'NAME','NUMBER',
 	'PLUS','MINUS','TIMES','DIVIDE','EQUALS','QUESTION_MARK','ESCLAMATION_POINT',
-	'LPAREN','RPAREN','COMMA', 'POINT', 'DQUOTE', 'SEMICOLON'
+	'LPAREN','RPAREN','COMMA', 'POINT', 'DQUOTE', 'SEMICOLON','DPOINT'
 	] + list(reserved.values())
 
 #TOKENS
@@ -81,6 +99,13 @@ def t_COMMA(t):
 		t.value = ','
 	return t
 	
+def t_SLASH(t):
+	r'\\'
+	if lex.dquotes:
+		t.type = 'NAME'  # Check for reserved words
+		t.value = '\\'
+	return t
+
 def t_QUESTION_MARK(t):
 	r'\?'
 	if lex.dquotes:
@@ -93,6 +118,27 @@ def t_ESCLAMATION_POINT(t):
 	if lex.dquotes:
 		t.type = 'NAME'  # Check for reserved words
 		t.value = '!'
+	return t
+
+def t_DPOINT(t):
+	r'\:'
+	if lex.dquotes:
+		t.type = 'NAME'  # Check for reserved words
+		t.value = ':'
+	return t
+
+def t_LTAG(t):
+	r'\<'
+	if lex.dquotes:
+		t.type = 'NAME'  # Check for reserved words
+		t.value = '<'
+	return t
+
+def t_RTAG(t):
+	r'\>'
+	if lex.dquotes:
+		t.type = 'NAME'  # Check for reserved words
+		t.value = '>'
 	return t
 
 def t_SEMICOLON(t):

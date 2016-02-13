@@ -18,6 +18,14 @@ def fix_italia(s):
 	cerca_straniero = cerca_straniero.sub('Roma Ladrona', s)
 	return cerca_straniero
 	
+def import_extra(s):
+	tmp = ""
+	if re.search('spione',s):
+		tmp = tmp + "import socket\n"
+	if re.search('esiste',s):
+		tmp = tmp +"import os.path\n"
+	return tmp
+	
 def addInputParamers(params):
 	header="import random\nfrontiera=[]\n"
 	bingo = "bingo"

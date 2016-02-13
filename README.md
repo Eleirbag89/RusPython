@@ -54,9 +54,10 @@ Variabili:
 * Puoi effettuare un assegnamento così: `variabile è espressione` oppure `variabile sono espressione`
 * Le stringhe sono racchiuse da doppi apici `"Stringa"`   
 * Puoi generare un numero casuale in un intervallo con `scegliete variabile fra espressione e espressione`
+* 
 
-Liste
-Ricordate che le stirnghe sono liste di caratteri!   
+Liste e Stringhe
+Ricordate che le stirnghe sono liste di caratteri!       
 * Creare una lista vuota: `raderemo al suolo variabile`
 * Aggiungere un elemento alla lista: `nella variabile deporta indice`.   
 Se vuoi anche specificare la posizione usa
@@ -64,6 +65,7 @@ Se vuoi anche specificare la posizione usa
 * Leggere un elemento dalla lista: `dalla variabile sgombera indice`
 * Ottenere la lunghezza della lista: `la dimensione di variabile`
 * Estrarre una sottolista: `variabile RUBA/RUBANO espressione e espressione`   
+* Effettuare lo split di una stringa `segrega stringa [in pattern]`
 
 Controllo del flusso
 * Per creare un costrutto IF: `variabile è/sono espressione ? istruzioni [ALTRIMENTI istruzioni].` Oppure usa `minore` o `maggiore`
@@ -81,6 +83,24 @@ Input/Output
 * I parametri passati allo script possono essere ottenuti in due modi:   
 * Usando la lista `frontiera`   
 * Usando la variabile `bingo bongo` per il primo parametro `bingo bongo bongo` per il secondo, `bingo bongo bongo bingo` per il terzo, `bingo bongo bongo bingo bongo bingo bongo bingo bongo` per l'ottavo e così via.   
+
+Socket (Altri metodi saranno aggiunti)
+* Creare una socket; `variabile è spione`   
+* Fare il bind di una socket `variabile ama host e odia port`
+* Mettere la socket in stato listen `varibile ascolta a #CodaConnessioni`
+* Leggere dati da una socket `variabile che regala #ByteDaLeggere euri`   
+* Scrivere dati su una socket `dico a variabile: espressione!`   
+* Accettare una connessione `rifiutiamo variabile!`  
+* Chiudere una socket `uccidiamo variabile!`    
+
+File (Altri metodi saranno aggiunti)
+* Aprire un file in lettura; `leggermente #PathDelFile`   
+* Controllare che un path esista (da inserire come condizione in un if) `Eiste #path ?`
+* Controllare se un path è una directory `Cartella #path ?`
+* Leggere l'intero contenuto di un file `variabile infame`    
+
+Thread
+* Avviare una funzione RusPython in un thread; `mandiamo funzione a lavorare [con parametro [e parametro]]`   
 
 Infine:   
 A noi Padani non piace parlare dei propri errori, per cui molte volte il codice fallirà senza segnalare nulla.   
@@ -111,6 +131,8 @@ Esempio `RusPython examples/ParamList.ruspy 5 Borghezio 3.14`
 Esempio `RusPython examples/RitualeDelPo.ruspy`
 * Matrimonio: Controlla se due parametri di input possono sposarsi.   
 Esempio `RusPython examples/Matrimonio.ruspy 5 5`
+* ServerWeb: Avvia un server web. Il primo parametro è il percorso dove sono salvati i file del sito, il secondo è l'host e il terzo la porta.       
+Esempio `RusPython examples/ServerWeb.ruspy /var/wwww/ localhost 8080`
 
 ## Attivati
 Sentiti libero di contribuire al progetto con commit, idee, suggerimenti.   
