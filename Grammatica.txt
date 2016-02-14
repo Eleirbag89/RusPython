@@ -9,55 +9,74 @@ Rule 5     empty_statement -> <empty>
 Rule 6     statement -> expression
 Rule 7     statement -> ATTENZIONE variable ESCLAMATION_POINT params end_params statements BASTA
 Rule 8     expression -> RICORDATE variable ESCLAMATION_POINT params_actual A CASA LORO
-Rule 9     end_params -> TORNINO A CASA LORO
-Rule 10    params -> variable E params
-Rule 11    params -> variable
-Rule 12    params -> <empty>
-Rule 13    params_actual -> expression E params_actual
-Rule 14    params_actual -> expression
-Rule 15    params_actual -> <empty>
-Rule 16    statement -> ESPELLI statement
-Rule 17    statement -> ESPELLILI statement
-Rule 18    statement -> variable EQUALS expression
-Rule 19    statement -> variable SONO expression
-Rule 20    expression -> variable EQUALS expression QUESTION_MARK statements POINT
-Rule 21    expression -> variable SONO expression QUESTION_MARK statements POINT
-Rule 22    expression -> variable MINORE expression QUESTION_MARK statements POINT
-Rule 23    expression -> variable MAGGIORE expression QUESTION_MARK statements POINT
-Rule 24    expression -> DQUOTE variable DQUOTE
-Rule 25    expression -> variable EQUALS expression QUESTION_MARK statements ALTRIMENTI statements POINT
-Rule 26    expression -> variable SONO expression QUESTION_MARK statements ALTRIMENTI statements POINT
-Rule 27    expression -> variable MINORE expression QUESTION_MARK statements ALTRIMENTI statements POINT
-Rule 28    expression -> variable MAGGIORE expression QUESTION_MARK statements ALTRIMENTI statements POINT
-Rule 29    statement -> URLA expression
-Rule 30    statement -> FINCHE variable MINORE expression SEMICOLON statements POINT
-Rule 31    statement -> FINCHE variable MAGGIORE expression SEMICOLON statements POINT
-Rule 32    statement -> FINCHE variable UGUALE expression SEMICOLON statements POINT
-Rule 33    expression -> statement PLUS statement
-Rule 34    expression -> statement MINUS statement
-Rule 35    expression -> statement TIMES statement
-Rule 36    expression -> statement DIVIDE statement
-Rule 37    expression -> RADEREMO AL SUOLO variable
-Rule 38    statement -> SCEGLIETE variable FRA expression E expression
-Rule 39    statement -> DITEMI variable COSA VOLETE
-Rule 40    expression -> DA variable SGOMBERA expression
-Rule 41    expression -> DALLA variable SGOMBERA expression
-Rule 42    expression -> A variable DEPORTA expression
-Rule 43    expression -> A variable DEPORTA expression NELLA CELLA expression
-Rule 44    expression -> NELLA variable DEPORTA expression NELLA CELLA expression
-Rule 45    expression -> NELLA variable DEPORTA expression
-Rule 46    expression -> AL variable DEPORTA expression NELLA CELLA expression
-Rule 47    expression -> AL variable DEPORTA expression
-Rule 48    expression -> LA DIMENSIONE DI variable
-Rule 49    statement -> PER OGNI variable IN variable SEMICOLON statements POINT
-Rule 50    expression -> MINUS expression
-Rule 51    expression -> LPAREN expression RPAREN
-Rule 52    expression -> numbers
-Rule 53    numbers -> NUMBER
-Rule 54    numbers -> number_float
-Rule 55    number_float -> NUMBER COMMA NUMBER
-Rule 56    expression -> variable
-Rule 57    variable -> names
-Rule 58    variable -> names COMMA
-Rule 59    names -> NAME names
-Rule 60    names -> <empty>
+Rule 9     expression -> MANDIAMO variable A LAVORARE CON params_actual ESCLAMATION_POINT
+Rule 10    expression -> MANDIAMO variable A LAVORARE ESCLAMATION_POINT
+Rule 11    end_params -> TORNINO A CASA LORO
+Rule 12    params -> variable E params
+Rule 13    params -> variable
+Rule 14    params -> <empty>
+Rule 15    params_actual -> expression E params_actual
+Rule 16    params_actual -> expression
+Rule 17    params_actual -> <empty>
+Rule 18    statement -> ESPELLI statement
+Rule 19    statement -> ESPELLILI statement
+Rule 20    statement -> variable EQUALS expression
+Rule 21    statement -> variable SONO expression
+Rule 22    expression -> LEGGERMENTE expression
+Rule 23    expression -> expression INFAME
+Rule 24    statement -> variable EQUALS SPIONE
+Rule 25    expression -> statement AMA expression E ODIA expression
+Rule 26    expression -> statement ASCOLTA A expression
+Rule 27    expression -> statement CHE REGALA expression EURI
+Rule 28    expression -> DICO A statement DPOINT expression ESCLAMATION_POINT
+Rule 29    expression -> UCCIDIAMO statement ESCLAMATION_POINT
+Rule 30    expression -> RIFIUTIAMO statement ESCLAMATION_POINT
+Rule 31    expression -> variable EQUALS expression QUESTION_MARK statements POINT
+Rule 32    expression -> variable SONO expression QUESTION_MARK statements POINT
+Rule 33    expression -> variable MINORE expression QUESTION_MARK statements POINT
+Rule 34    expression -> variable MAGGIORE expression QUESTION_MARK statements POINT
+Rule 35    expression -> ESISTE expression QUESTION_MARK statements POINT
+Rule 36    expression -> CARTELLA expression QUESTION_MARK statements POINT
+Rule 37    expression -> DQUOTE variable DQUOTE
+Rule 38    expression -> variable EQUALS expression QUESTION_MARK statements ALTRIMENTI statements POINT
+Rule 39    expression -> variable SONO expression QUESTION_MARK statements ALTRIMENTI statements POINT
+Rule 40    expression -> variable MINORE expression QUESTION_MARK statements ALTRIMENTI statements POINT
+Rule 41    expression -> variable MAGGIORE expression QUESTION_MARK statements ALTRIMENTI statements POINT
+Rule 42    expression -> ESISTE expression QUESTION_MARK statements ALTRIMENTI statements POINT
+Rule 43    expression -> CARTELLA expression QUESTION_MARK statements ALTRIMENTI statements POINT
+Rule 44    statement -> URLA expression
+Rule 45    statement -> FINCHE variable MINORE expression SEMICOLON statements POINT
+Rule 46    statement -> FINCHE variable MAGGIORE expression SEMICOLON statements POINT
+Rule 47    statement -> FINCHE variable UGUALE expression SEMICOLON statements POINT
+Rule 48    expression -> statement PLUS statement
+Rule 49    expression -> statement MINUS statement
+Rule 50    expression -> statement TIMES statement
+Rule 51    expression -> statement DIVIDE statement
+Rule 52    expression -> RADEREMO AL SUOLO variable
+Rule 53    statement -> SCEGLIETE variable FRA expression E expression
+Rule 54    statement -> DITEMI variable COSA VOLETE
+Rule 55    expression -> DA variable SGOMBERA expression
+Rule 56    expression -> DALLA variable SGOMBERA expression
+Rule 57    expression -> variable RUBANO expression E expression
+Rule 58    expression -> variable RUBA expression E expression
+Rule 59    expression -> SEGREGA expression IN expression
+Rule 60    expression -> SEGREGA expression
+Rule 61    expression -> A variable DEPORTA expression
+Rule 62    expression -> A variable DEPORTA expression NELLA CELLA expression
+Rule 63    expression -> NELLA variable DEPORTA expression NELLA CELLA expression
+Rule 64    expression -> NELLA variable DEPORTA expression
+Rule 65    expression -> AL variable DEPORTA expression NELLA CELLA expression
+Rule 66    expression -> AL variable DEPORTA expression
+Rule 67    expression -> LA DIMENSIONE DI variable
+Rule 68    statement -> PER OGNI variable IN variable SEMICOLON statements POINT
+Rule 69    expression -> MINUS statement
+Rule 70    expression -> LPAREN expression RPAREN
+Rule 71    expression -> numbers
+Rule 72    numbers -> NUMBER
+Rule 73    numbers -> number_float
+Rule 74    number_float -> NUMBER COMMA NUMBER
+Rule 75    expression -> variable
+Rule 76    variable -> names
+Rule 77    variable -> names COMMA
+Rule 78    names -> NAME names
+Rule 79    names -> <empty>
