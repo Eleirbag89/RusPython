@@ -12,20 +12,12 @@ degrado della societa è "Vai al negozio comprane altre, 99 bottiglie di birra s
 cittadinanza è 0
 ottanta euro è 0
 finche stranieri maggiore italiani; 
-	stranieri maggiore padani?
-		urla stranieri e bottiglie e ruspa e stranieri e bottiglie e degrado
-	altrimenti
-		stranieri è padani? 
-			urla stranieri e bottiglia e ruspa e stranieri e bottiglia e degrado.
-		stranieri è 0?
-			urla albanesi e bottiglia e ruspa e rom e bottiglia e degrado.
-.stranieri è stranieri -1
-	stranieri maggiore ottanta euro?
-		urla zingari e stranieri e bottiglie e ruspa
-	altrimenti
-		stranieri è cittadinanza? 
-			urla zingari e rom e bottiglia e ruspa.
-		stranieri è italiani?
-			urla degrado della societa.
-	..
+stranieri maggiore padani? urla stranieri e bottiglie e ruspa e stranieri e bottiglie e degrado altrimenti
+stranieri è padani? urla stranieri e bottiglia e ruspa e stranieri e bottiglia e degrado.
+stranieri è 0? urla albanesi e bottiglia e ruspa e rom e bottiglia e degrado..
+stranieri è stranieri -1 stranieri maggiore ottanta euro?
+urla zingari e stranieri e bottiglie e ruspa altrimenti	stranieri è cittadinanza? 
+urla zingari e rom e bottiglia e ruspa.
+stranieri è italiani?
+urla degrado della societa...
 PadaniaLibera
