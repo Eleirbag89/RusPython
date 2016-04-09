@@ -5,9 +5,65 @@
     <description>RusPython: perché per Python ci vuole la RUSPA!!!</description>
     <link>http://ruspython.ienadeprex.com//</link>
     <atom:link href="http://ruspython.ienadeprex.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Feb 2016 23:34:04 +0100</pubDate>
-    <lastBuildDate>Sun, 14 Feb 2016 23:34:04 +0100</lastBuildDate>
+    <pubDate>Sat, 09 Apr 2016 12:24:09 +0200</pubDate>
+    <lastBuildDate>Sat, 09 Apr 2016 12:24:09 +0200</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Come nasce un programma Ruspython</title>
+        <description>&lt;p&gt;Sono stato abbastanza occupato in questi mesi e purtroppo lo sviluppo di RusPython ne ha un pò risentito.  &lt;br /&gt;
+Da un bel pò volevo scrivere un post su quale sia l’iter che usiamo per scrivere dei programmi. Ci sono due macro-approcci al problema: scrivere un programma perché è divertente (come Matrimonio.ruspy) oppure approfittarne per estendere e testare nuove funzionalità dell’interprete Ruspython.  &lt;br /&gt;
+Spesso però la linea di demarcazione non è così netta. Oggi infatti ho realizzato il programma &lt;code class=&quot;highlighter-rouge&quot;&gt;99 bottiglie.ruspy&lt;/code&gt; che stampa sullo schermo la versione italiana della canzone &lt;a href=&quot;http://www.99-bottles-of-beer.net/lyrics.html&quot;&gt;99 bottles of beer&lt;/a&gt;, uno degli esempi più classici usati per insegnare ai nabbi costrutti come i cicli while e for. &lt;br /&gt;
+Per prima cosa ho appuntato su un foglietto di carta un pò di pseudocodice:  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;for (int i=99; i&amp;gt;0;i--) {    
+	print i &quot;bottiglie di birra sul muro, &quot;+i bottiglie&lt;/code&gt;  &lt;br /&gt;
+Ma mi sono stufato subito data la poca espressività dello pseudocodice, perciò ho deciso di realizzarlo direttamente in RusPython. &lt;br /&gt;
+Durante lo sviluppo però mi sono accorto di due problemi:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Il primo è che c’era un bug nell’istruzione &lt;code class=&quot;highlighter-rouge&quot;&gt;finche&lt;/code&gt; che non accettava l’operatore &lt;code class=&quot;highlighter-rouge&quot;&gt;maggiore&lt;/code&gt;, che ho dovuto fixare (&lt;code class=&quot;highlighter-rouge&quot;&gt; maggiore &lt;/code&gt; doveva essere &lt;code class=&quot;highlighter-rouge&quot;&gt;maggiore&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;Non era possibile usare URLA per concatenare numeri e stringhe, quindi non potevo urla n+”bottiglie” senza che Python si lamentasse per la sua incapacità di concatenare numeri e stringhe.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Per il secondo punto ho dovuto modificare il costrutto &lt;code class=&quot;highlighter-rouge&quot;&gt;urla&lt;/code&gt; per permettergli di accettare diverse espressioni separate dalla congiunzione &lt;code class=&quot;highlighter-rouge&quot;&gt;e&lt;/code&gt;. &lt;br /&gt;
+Il parser poi si occupa di inserire &lt;code class=&quot;highlighter-rouge&quot;&gt;str()&lt;/code&gt; intorno ad ogni valore e finalmente tutto è andato per il meglio, &lt;br /&gt;
+Prima di poter continuare a lavorare sul mio codice ho riprovato tutti gli esempi già esistenti per essere certo che queste nuove modifiche non avessero distrutto qualche codice funzionante. Fortunatamente tutto è andato per il verso giusto e sono riuscito a terminare la versione definitiva di 99 bottiglie:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;stranieri è 99&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;padani è 1&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;italiani è -1&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;bottiglia è &quot; bottiglia di birra&quot;&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;bottiglie è &quot; bottiglie di birra&quot;&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ruspa è &quot; sul muro, &quot;&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;degrado è &quot;.&quot;&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;rom è &quot;nessuna&quot;&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;albanesi è &quot;Nessuna&quot;&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;zingari è &quot;Prendine una, falla girare, &quot;&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;degrado della societa è &quot;Vai al negozio comprane altre, 99 bottiglie di birra sul muro.&quot;&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;cittadinanza è 0&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ottanta euro è 0&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;finche stranieri maggiore italiani;&lt;/code&gt;   &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;stranieri maggiore padani? urla stranieri e bottiglie e ruspa e stranieri e bottiglie e degrado altrimenti&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;stranieri è padani? urla stranieri e bottiglia e ruspa e stranieri e bottiglia e degrado.&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;stranieri è 0? urla albanesi e bottiglia e ruspa e rom e bottiglia e degrado..&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;stranieri è stranieri -1 stranieri maggiore ottanta euro?&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;urla zingari e stranieri e bottiglie e ruspa altrimenti	stranieri è cittadinanza?&lt;/code&gt;   &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;urla zingari e rom e bottiglia e ruspa.&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;stranieri è italiani?&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;urla degrado della societa...&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;PadaniaLibera&lt;/code&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 09 Apr 2016 09:15:55 +0200</pubDate>
+        <link>http://ruspython.ienadeprex.com//codice/nerderia/2016/04/09/come-nasce-un-programma-ruspython.html</link>
+        <guid isPermaLink="true">http://ruspython.ienadeprex.com//codice/nerderia/2016/04/09/come-nasce-un-programma-ruspython.html</guid>
+        
+        
+        <category>codice</category>
+        
+        <category>nerderia</category>
+        
+      </item>
     
       <item>
         <title>Salto di qualità: un server web in RusPython!</title>
