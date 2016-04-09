@@ -9,12 +9,12 @@ Sono stato abbastanza occupato in questi mesi e purtroppo lo sviluppo di RusPyth
 Da un bel pò volevo scrivere un post su quale sia l'iter che usiamo per scrivere dei programmi. Ci sono due macro-approcci al problema: scrivere un programma perché è divertente (come Matrimonio.ruspy) oppure approfittarne per estendere e testare nuove funzionalità dell'interprete Ruspython.    
 Spesso però la linea di demarcazione non è così netta. Oggi infatti ho realizzato il programma `99 bottiglie.ruspy` che stampa sullo schermo la versione italiana della canzone [99 bottles of beer](http://www.99-bottles-of-beer.net/lyrics.html), uno degli esempi più classici usati per insegnare ai nabbi costrutti come i cicli while e for.   
 Per prima cosa ho appuntato su un foglietto di carta un pò di pseudocodice:    
-`for (int i=99; i>0;i--) {    
-	print i "bottiglie di birra sul muro, "+i bottiglie`    
+`for (int i=99; i>0;i--)`         
+`	print i "bottiglie di birra sul muro, "+i bottiglie`    
 Ma mi sono stufato subito data la poca espressività dello pseudocodice, perciò ho deciso di realizzarlo direttamente in RusPython.   
 Durante lo sviluppo però mi sono accorto di due problemi:
 
-- Il primo è che c'era un bug nell'istruzione `finche` che non accettava l'operatore `maggiore`, che ho dovuto fixare (` maggiore ` doveva essere `maggiore`)    
+- Il primo è che c'era un bug nell'istruzione `finche` che non accettava l'operatore `maggiore`, che ho dovuto fixare (`' maggiore '` doveva essere `'maggiore'`)    
 - Non era possibile usare URLA per concatenare numeri e stringhe, quindi non potevo urla n+"bottiglie" senza che Python si lamentasse per la sua incapacità di concatenare numeri e stringhe.   
 
 Per il secondo punto ho dovuto modificare il costrutto `urla` per permettergli di accettare diverse espressioni separate dalla congiunzione `e`.   

@@ -5,8 +5,8 @@
     <description>RusPython: perché per Python ci vuole la RUSPA!!!</description>
     <link>http://ruspython.ienadeprex.com//</link>
     <atom:link href="http://ruspython.ienadeprex.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 09 Apr 2016 12:24:09 +0200</pubDate>
-    <lastBuildDate>Sat, 09 Apr 2016 12:24:09 +0200</lastBuildDate>
+    <pubDate>Sat, 09 Apr 2016 12:31:22 +0200</pubDate>
+    <lastBuildDate>Sat, 09 Apr 2016 12:31:22 +0200</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -15,13 +15,13 @@
 Da un bel pò volevo scrivere un post su quale sia l’iter che usiamo per scrivere dei programmi. Ci sono due macro-approcci al problema: scrivere un programma perché è divertente (come Matrimonio.ruspy) oppure approfittarne per estendere e testare nuove funzionalità dell’interprete Ruspython.  &lt;br /&gt;
 Spesso però la linea di demarcazione non è così netta. Oggi infatti ho realizzato il programma &lt;code class=&quot;highlighter-rouge&quot;&gt;99 bottiglie.ruspy&lt;/code&gt; che stampa sullo schermo la versione italiana della canzone &lt;a href=&quot;http://www.99-bottles-of-beer.net/lyrics.html&quot;&gt;99 bottles of beer&lt;/a&gt;, uno degli esempi più classici usati per insegnare ai nabbi costrutti come i cicli while e for. &lt;br /&gt;
 Per prima cosa ho appuntato su un foglietto di carta un pò di pseudocodice:  &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;for (int i=99; i&amp;gt;0;i--) {    
-	print i &quot;bottiglie di birra sul muro, &quot;+i bottiglie&lt;/code&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;for (int i=99; i&amp;gt;0;i--)&lt;/code&gt;       &lt;br /&gt;
+`	print i “bottiglie di birra sul muro, “+i bottiglie`  &lt;br /&gt;
 Ma mi sono stufato subito data la poca espressività dello pseudocodice, perciò ho deciso di realizzarlo direttamente in RusPython. &lt;br /&gt;
 Durante lo sviluppo però mi sono accorto di due problemi:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Il primo è che c’era un bug nell’istruzione &lt;code class=&quot;highlighter-rouge&quot;&gt;finche&lt;/code&gt; che non accettava l’operatore &lt;code class=&quot;highlighter-rouge&quot;&gt;maggiore&lt;/code&gt;, che ho dovuto fixare (&lt;code class=&quot;highlighter-rouge&quot;&gt; maggiore &lt;/code&gt; doveva essere &lt;code class=&quot;highlighter-rouge&quot;&gt;maggiore&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;Il primo è che c’era un bug nell’istruzione &lt;code class=&quot;highlighter-rouge&quot;&gt;finche&lt;/code&gt; che non accettava l’operatore &lt;code class=&quot;highlighter-rouge&quot;&gt;maggiore&lt;/code&gt;, che ho dovuto fixare (&lt;code class=&quot;highlighter-rouge&quot;&gt;&#39; maggiore &#39;&lt;/code&gt; doveva essere &lt;code class=&quot;highlighter-rouge&quot;&gt;&#39;maggiore&#39;&lt;/code&gt;)&lt;/li&gt;
   &lt;li&gt;Non era possibile usare URLA per concatenare numeri e stringhe, quindi non potevo urla n+”bottiglie” senza che Python si lamentasse per la sua incapacità di concatenare numeri e stringhe.&lt;/li&gt;
 &lt;/ul&gt;
 
