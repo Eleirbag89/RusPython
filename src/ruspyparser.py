@@ -253,8 +253,18 @@ def p_statement_if_else_dir(p):
 	p[0] = tmp
 
 def p_statement_urla(p):
-	'statement : URLA expression'
+	'statement : URLA print_params'
 	p[0] = "print "+str(p[2])
+	
+	
+def p_statement_urla_params(p):
+	'''print_params : expression E print_params
+			  | expression
+			  |'''
+	if len(p) >=3 :
+		p[0] = "str("+str(p[1])+")"+ "+ str(" +str(p[3])+")"
+	else:
+		p[0] = str(p[1])
 	
 def p_statement_finche_minore(p):
 	'''statement : FINCHE variable MINORE expression SEMICOLON statements POINT
@@ -263,8 +273,8 @@ def p_statement_finche_minore(p):
 	op = ""
 	if p[3] == "minore":
 		op = " < "
-	elif p[3] == " maggiore ":
-		op = ">"
+	elif p[3] == "maggiore":
+		op = " > "
 	elif p[3] == "uguale":
 		op = " == "
 	tmp = "while "+str(names[p[2]])+op+str(p[4])+":"
