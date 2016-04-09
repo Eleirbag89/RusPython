@@ -79,6 +79,7 @@ Funzioni
 
 Input/Output
 * Stampare sullo schermo; `urla espressione`   
+Si possono stampare valori concatenati usando `e`; `urla espressione e espressione [e espressione...]`   
 * Leggere un valore numerico inserito dall'utente nel terminale `ditemi variabile cosa volete`
 * I parametri passati allo script possono essere ottenuti in due modi:   
 * Usando la lista `frontiera`   
@@ -133,6 +134,8 @@ Esempio `RusPython examples/RitualeDelPo.ruspy`
 Esempio `RusPython examples/Matrimonio.ruspy 5 5`
 * ServerWeb: Avvia un server web. Il primo parametro è il percorso dove sono salvati i file del sito, il secondo è l'host e il terzo la porta.       
 Esempio `RusPython examples/ServerWeb.ruspy /var/wwww/ localhost 8080`
+* 99 bottiglie: Canta la canzone 99 bottiglie di birra.       
+Esempio `RusPython examples/99 bottiglie.ruspy`
 
 ## Attivati
 Sentiti libero di contribuire al progetto con commit, idee, suggerimenti.   
