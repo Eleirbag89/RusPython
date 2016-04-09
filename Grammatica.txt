@@ -44,39 +44,42 @@ Rule 40    expression -> variable MINORE expression QUESTION_MARK statements ALT
 Rule 41    expression -> variable MAGGIORE expression QUESTION_MARK statements ALTRIMENTI statements POINT
 Rule 42    expression -> ESISTE expression QUESTION_MARK statements ALTRIMENTI statements POINT
 Rule 43    expression -> CARTELLA expression QUESTION_MARK statements ALTRIMENTI statements POINT
-Rule 44    statement -> URLA expression
-Rule 45    statement -> FINCHE variable MINORE expression SEMICOLON statements POINT
-Rule 46    statement -> FINCHE variable MAGGIORE expression SEMICOLON statements POINT
-Rule 47    statement -> FINCHE variable UGUALE expression SEMICOLON statements POINT
-Rule 48    expression -> statement PLUS statement
-Rule 49    expression -> statement MINUS statement
-Rule 50    expression -> statement TIMES statement
-Rule 51    expression -> statement DIVIDE statement
-Rule 52    expression -> RADEREMO AL SUOLO variable
-Rule 53    statement -> SCEGLIETE variable FRA expression E expression
-Rule 54    statement -> DITEMI variable COSA VOLETE
-Rule 55    expression -> DA variable SGOMBERA expression
-Rule 56    expression -> DALLA variable SGOMBERA expression
-Rule 57    expression -> variable RUBANO expression E expression
-Rule 58    expression -> variable RUBA expression E expression
-Rule 59    expression -> SEGREGA expression IN expression
-Rule 60    expression -> SEGREGA expression
-Rule 61    expression -> A variable DEPORTA expression
-Rule 62    expression -> A variable DEPORTA expression NELLA CELLA expression
-Rule 63    expression -> NELLA variable DEPORTA expression NELLA CELLA expression
-Rule 64    expression -> NELLA variable DEPORTA expression
-Rule 65    expression -> AL variable DEPORTA expression NELLA CELLA expression
-Rule 66    expression -> AL variable DEPORTA expression
-Rule 67    expression -> LA DIMENSIONE DI variable
-Rule 68    statement -> PER OGNI variable IN variable SEMICOLON statements POINT
-Rule 69    expression -> MINUS statement
-Rule 70    expression -> LPAREN expression RPAREN
-Rule 71    expression -> numbers
-Rule 72    numbers -> NUMBER
-Rule 73    numbers -> number_float
-Rule 74    number_float -> NUMBER COMMA NUMBER
-Rule 75    expression -> variable
-Rule 76    variable -> names
-Rule 77    variable -> names COMMA
-Rule 78    names -> NAME names
-Rule 79    names -> <empty>
+Rule 44    statement -> URLA print_params
+Rule 45    print_params -> expression E print_params
+Rule 46    print_params -> expression
+Rule 47    print_params -> <empty>
+Rule 48    statement -> FINCHE variable MINORE expression SEMICOLON statements POINT
+Rule 49    statement -> FINCHE variable MAGGIORE expression SEMICOLON statements POINT
+Rule 50    statement -> FINCHE variable UGUALE expression SEMICOLON statements POINT
+Rule 51    expression -> statement PLUS statement
+Rule 52    expression -> statement MINUS statement
+Rule 53    expression -> statement TIMES statement
+Rule 54    expression -> statement DIVIDE statement
+Rule 55    expression -> RADEREMO AL SUOLO variable
+Rule 56    statement -> SCEGLIETE variable FRA expression E expression
+Rule 57    statement -> DITEMI variable COSA VOLETE
+Rule 58    expression -> DA variable SGOMBERA expression
+Rule 59    expression -> DALLA variable SGOMBERA expression
+Rule 60    expression -> variable RUBANO expression E expression
+Rule 61    expression -> variable RUBA expression E expression
+Rule 62    expression -> SEGREGA expression IN expression
+Rule 63    expression -> SEGREGA expression
+Rule 64    expression -> A variable DEPORTA expression
+Rule 65    expression -> A variable DEPORTA expression NELLA CELLA expression
+Rule 66    expression -> NELLA variable DEPORTA expression NELLA CELLA expression
+Rule 67    expression -> NELLA variable DEPORTA expression
+Rule 68    expression -> AL variable DEPORTA expression NELLA CELLA expression
+Rule 69    expression -> AL variable DEPORTA expression
+Rule 70    expression -> LA DIMENSIONE DI variable
+Rule 71    statement -> PER OGNI variable IN variable SEMICOLON statements POINT
+Rule 72    expression -> MINUS statement
+Rule 73    expression -> LPAREN expression RPAREN
+Rule 74    expression -> numbers
+Rule 75    numbers -> NUMBER
+Rule 76    numbers -> number_float
+Rule 77    number_float -> NUMBER COMMA NUMBER
+Rule 78    expression -> variable
+Rule 79    variable -> names
+Rule 80    variable -> names COMMA
+Rule 81    names -> NAME names
+Rule 82    names -> <empty>
