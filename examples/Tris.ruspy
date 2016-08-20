@@ -1,0 +1,48 @@
+urla "Tris: Salvini AI Simulator"
+Raderemo al suolo campo,
+Renzi è 0 Alfano è 9
+finche Renzi minore Alfano; 
+al campo deporta "_" Renzi è Renzi + 1.
+Attenzione cittadini ! i neri tornino a casa loro 
+Rom è 0 Alfano è 9
+finche Rom minore Alfano ; urla dalla campo sgombera 0+Rom e dalla campo 
+sgombera 1+Rom e dalla campo sgombera 2+Rom, Rom è Rom + 3.
+Basta
+aiutiamoli è 0 finanziaria è 1
+attenzione leghisti! i talebani tornino a casa loro
+merda è 0 schifo è 1 vergognoso è 2 rivoltante è 3 indecente è 4 incredibile è 5
+piscio è 6 vomito è 7 puzzoso è 8 Controlli è 2 efficiente è "X" Albanese è 0
+finche Albanese minore Controlli;Boschi è 0
+finche Boschi minore 9; Boschi è merda ? zingari sono merda, immigrati sono schifo, lavavetri è vergognoso. 
+Boschi è schifo ? 
+Zingari è rivoltante, immigrati è indecente, lavavetri è incredibile. 
+Boschi è vergognoso ? zingari è piscio, immigrati è vomito, lavavetri è puzzoso. 
+Boschi è rivoltante ? zingari sono merda, immigrati è rivoltante, lavavetri è piscio. 
+Boschi è indecente ? zingari è schifo, immigrati è indecente, lavavetri è vomito. 
+Boschi è incredibile ? zingari è vergognoso, immigrati è incredibile, lavavetri è puzzoso. 
+Boschi è piscio ? zingari è merda, immigrati è indecente, lavavetri è puzzoso.
+Boschi è vomito ? zingari è vergognoso, immigrati è indecente, lavavetri è piscio.	
+Polizia è dalla campo sgombera zingari,	carabinieri è dalla campo sgombera immigrati,
+esercito è dalla campo sgombera lavavetri, polizia è efficiente ? 
+Carabinieri sono efficiente ? Esercito è efficiente ? espelli 1...
+Boschi è Boschi+Schifo. Albanese è Albanese +Schifo,
+efficiente è "O". Espelli merda Basta
+Attenzione uomini duri! I talebani tornino a casa loro
+Per ogni feccia in campo; feccia è "_" espelli 0. Espelli 1
+Basta
+Attenzione tutti! I profughi tornino a casa loro
+federalismo è 0 tasse è 8 finche federalismo minore 1;
+scegliete padani fra federalismo e tasse, giustizia è dalla campo sgombera padani, giustizia è "_" ? 
+Al campo deporta "O" nella cella padani, federalismo è 1..
+Basta Profughi sono "troppi" Salvini è 8 sticazzi è 1
+finche aiutiamoli minore finanziaria; ricordate cittadini ! Profughi A casa loro
+ditemi padani cosa volete padani maggiore Salvini ? 
+Urla "Inserisci un numero fra 0 e 8" altrimenti 
+Banana è dalla campo sgombera padani, banana è "_" ? al campo deporta "X" nella cella padani,
+Vittoria è ricordate leghisti! Profughi a casa loro
+vittoria è sticazzi ? urla "Hai vinto" aiutiamoli è sticazzi altrimenti
+pareggio è ricordate uomini duri! Profughi a casa loro
+pareggio è sticazzi ? urla "Pareggio" aiutiamoli è sticazzi altrimenti 
+ricordate tutti! Profughi a casa loro vittoria è ricordate leghisti! Profughi a casa loro
+vittoria è sticazzi ? urla "Hai perso" aiutiamoli è sticazzi... altrimenti urla "Posizione già occupata"...
+PadaniaLibera

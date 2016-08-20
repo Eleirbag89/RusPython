@@ -27,7 +27,7 @@ def import_extra(s):
 	return tmp
 	
 def addInputParamers(params):
-	header="import random\nfrontiera=[]\n"
+	header="import random\nglobal random\nfrontiera=[]\n"
 	bingo = "bingo"
 	bongo = "bongo"
 	basename = "bingobongo"

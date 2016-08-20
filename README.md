@@ -136,6 +136,8 @@ Esempio `RusPython examples/Matrimonio.ruspy 5 5`
 Esempio `RusPython examples/ServerWeb.ruspy /var/wwww/ localhost 8080`
 * 99 bottiglie: Canta la canzone 99 bottiglie di birra.       
 Esempio `RusPython examples/99 bottiglie.ruspy`
+* Tris: Gioca una partita a Tris contro la migliore simulazione di Matteo.
+Esempio `RusPython examples/Tris.ruspy`
 
 ## Attivati
 Sentiti libero di contribuire al progetto con commit, idee, suggerimenti.   
