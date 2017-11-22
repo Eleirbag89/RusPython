@@ -57,7 +57,7 @@ Variabili:
 * 
 
 Liste e Stringhe
-Ricordate che le stirnghe sono liste di caratteri!       
+Ricordate che le stringhe sono liste di caratteri!       
 * Creare una lista vuota: `raderemo al suolo variabile`
 * Aggiungere un elemento alla lista: `nella variabile deporta indice`.   
 Se vuoi anche specificare la posizione usa
@@ -96,7 +96,7 @@ Socket (Altri metodi saranno aggiunti)
 
 File (Altri metodi saranno aggiunti)
 * Aprire un file in lettura; `leggermente #PathDelFile`   
-* Controllare che un path esista (da inserire come condizione in un if) `Eiste #path ?`
+* Controllare che un path esista (da inserire come condizione in un if) `Esiste #path ?`
 * Controllare se un path è una directory `Cartella #path ?`
 * Leggere l'intero contenuto di un file `variabile infame`    
 
