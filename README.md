@@ -149,7 +149,10 @@ Se questa pagina ti ha divertito, rifletti sulla possibilità di fare una donazi
 Se sei più sul lato hacktivist, potresti donare qualcosa al collettivo [Autistici/Inventati](http://www.autistici.org/it/donate.html)    
 Inoltre puoi fare una donazione ai ragazzi dietro [TrumScript](https://github.com/samshadwell/TrumpScript), il progetto che ha ispirato tutto questo: [Shadwell](https://paypal.me/Shadwell).
 
-## Siccome siamo al verde
-Puoi offrirci una birra o due usando [Paypal](https://paypal.me/eleirbag89)    
-Oppure puoi flattrarci   
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=eleirbag89&url=https://github.com/Eleirbag89/RusPython&title=RusPython&language=it&tags=github&category=software) 
+
+## Disclaimer
+Questo progetto è sostanzialmente abbandonato, aggiungo queste righe solo perché questo progetto è stato associato da diverse parti a GomorraSql ed ha goduto di una nuova visibilità.
+
+Quanto ho iniziato a implementare RusPython era il 2016, prima dell'esperienza del governo giallo-verde, prima che l'odio xenofobo, razzista e sessista abbia avuto il potere di causare sofferenza e morte. Ho smesso di sviluppare RusPython perché per me lo scherzo non è più divertente, anzi, temo possa essere controproducente.
+
+Rimuoverò tutti i riferimenti alla monetizzazione da questo progetto, invito a donare e supportare attivamente organizzazioni che contrastano l'odio e la persecuzione per nazionalità, etnia o sessualità.
