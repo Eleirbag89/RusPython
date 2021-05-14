@@ -151,7 +151,7 @@ Inoltre puoi fare una donazione ai ragazzi dietro [TrumScript](https://github.co
 
 
 ## Disclaimer 2021
-Questo progetto è sostanzialmente abbandonato, aggiungo queste righe solo perché questo progetto è stato associato da diverse parti a [GomorraSql](https://github.com/aurasphere/gomorra-sql) ed ha goduto di una nuova visibilità.
+Questo progetto è sostanzialmente abbandonato, anche se resto aperto ad accettare contributi e modifiche, aggiungo queste righe solo perché questo progetto è stato associato da diverse parti a [GomorraSql](https://github.com/aurasphere/gomorra-sql) ed ha goduto di una nuova visibilità.
 
 Quanto ho iniziato a implementare RusPython era il 2016, prima dell'esperienza del governo giallo-verde, prima che l'odio xenofobo, razzista e sessista abbia avuto il potere di causare sofferenza e morte. Ho smesso di sviluppare RusPython perché per me lo scherzo non è più divertente, anzi, temo possa essere controproducente.
 
